@@ -16,5 +16,5 @@ test.ts
 local.*
 repolinter/
 .DS_Store
-package-lock.json
+#package-lock.json
 gitlab-ci.yaml
