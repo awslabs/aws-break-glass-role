@@ -29,11 +29,10 @@ jobs:
         CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
         NPM_NEXT_VERSION: ${{ secrets.NPM_NEXT_VERSION }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-    - run: npm ci && npm link
-    - run: npm test
-    - run: break-glass signin && break-glass cleanup us-east-1 us-east-2 us-west-2
-    - run: npm run integ
-      
+      run: npm ci && npm link && npm test && \\
+           break-glass signin && break-glass cleanup \\
+           us-east-1 us-east-2 us-west-2 && \\
+           npm run integ
     - name: Package Artifact
       uses: actions/upload-artifact@v3
       with:
