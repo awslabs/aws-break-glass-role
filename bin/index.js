@@ -1,4 +1,4 @@
-#!/usr/bin/env nodejs
+#!/usr/bin/env node
 
 const signin = require('./signin');
 const cleanup = require('./cleanup');

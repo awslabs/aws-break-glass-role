@@ -22,7 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install && npm link
+    - run: npm ci && npm link
     - run: npm test
     - run: break-glass signin && break-glass cleanup us-east-1 us-east-2 us-west-2
     - run: npm run integ
