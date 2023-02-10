@@ -4,6 +4,7 @@
   "version": "1.2.0",
   "main": "src/lib/index.js",
   "types": "src/types/lib/index.d.ts",
+  "author": "sguggenh@amazon.com",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",

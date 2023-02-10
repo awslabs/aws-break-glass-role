@@ -1,6 +1,7 @@
 # AWS CDK Break Glass Role
 
 [![Build](https://github.com/awslabs/aws-break-glass-role/actions/workflows/package.js.yml/badge.svg)](https://github.com/awslabs/aws-break-glass-role/actions/workflows/package.js.yml)
+![License](https://img.shields.io/github/license/awslabs/aws-break-glass-role?style=plastic)
 
 ***Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.***
 
