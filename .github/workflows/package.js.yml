@@ -26,8 +26,9 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
           CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
+    - run: npm version $NPM_NEXT_VERSION
+      env:
           NPM_NEXT_VERSION: ${{ secrets.NPM_NEXT_VERSION }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     - name: Package Artifact
       uses: actions/upload-artifact@v3
       with:
@@ -40,13 +41,18 @@ jobs:
           !lib/util/assets
           !package-lock.json
           !.github
+    - name: Get Artifact
+      uses: actions/download-artifact@v3
+      with:
+        name: my-artifact
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
+    - run: NPM_PACKAGE_VERSION=$(node -p "require('./package.json').version")
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.repository }}
-        release_name: ${{ github.repository }}
+        tag_name: refs/tags/$NPM_PACKAGE_VERSION
+        release_name: ${{ github.repository }}@$NPM_PACKAGE_VERSION
         draft: false
         prerelease: false
