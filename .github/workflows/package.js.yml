@@ -32,5 +32,11 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: aws-break-glass-role
-        path: /src/
+        path: |
+          ./*
+          !node_modules/*
+          !coverage/*
+          !.git/*
+          !lib/util/assets
+          !package-lock.json
   
