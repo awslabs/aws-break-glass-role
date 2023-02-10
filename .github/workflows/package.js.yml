@@ -45,14 +45,16 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: my-artifact
+    - name: get-npm-version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@main
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
-    - run: NPM_PACKAGE_VERSION=$(node -p "require('./package.json').version")
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: refs/tags/$NPM_PACKAGE_VERSION
-        release_name: ${{ github.repository }}@$NPM_PACKAGE_VERSION
+        tag_name: refs/tags/v${{ steps.package-version.outputs.current-version }}
+        release_name: ${{ github.repository }}@${{ steps.package-version.outputs.current-version }}
         draft: false
         prerelease: false
