@@ -14,9 +14,10 @@
 - [Regions](#regions)
 - [Break Glass Role Properties](#break-glass-role-properties)
 - [Break-Glass Deployer Permissions](#break-glass-deployer-permissions)
-- [Break-Glass User](#break-glass-user)
-- [Other Custom Types](#other-custom-types)
-- [CLI](#cli)  
+- [Available Constructs](#available-constructs)
+- [Architecture](#architecture)
+- [Security](#security)
+- [License](#license)  
 
 ## Break Glass Roles
 Often when undergoing security reviews for applications in a full CI/CD deployment environment, it is recommended to restrict console access to the AWS account that hosts the production environment. A popular way to implement this recommendation is to remove all production write access completely from user and role policies.

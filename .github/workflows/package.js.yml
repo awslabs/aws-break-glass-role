@@ -20,9 +20,7 @@ jobs:
         node-version: 18
     - run: npm ci && npm link
     - run: npm test
-    - run: break-glass signin && \\
-           break-glass cleanup us-east-1 us-east-2 us-west-2 && \\
-           npm run integ
+    - run: break-glass signin && break-glass cleanup us-east-1 us-east-2 us-west-2 && npm run integ
       env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
