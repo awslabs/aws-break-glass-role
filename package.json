@@ -1,0 +1,33 @@
+{
+  "name": "aws-break-glass-role",
+  "description": "Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.",
+  "version": "1.2.0",
+  "main": "src/lib/index.js",
+  "types": "src/types/lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest --ci --reporters=default --coverage",
+    "integ": "integ-runner",
+    "integ-local": "npm run build && integ-runner",
+    "prepare": "npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@aws-cdk/integ-runner": "^2.55.1",
+    "@aws-cdk/integ-tests-alpha": "^2.55.1-alpha.0",
+    "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.15",
+    "constructs": "^10.0.0",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.55.1",
+    "aws-sdk": "^2.1282.0"
+  },
+  "bin": {
+    "break-glass": "./bin/index.js"
+  }
+}

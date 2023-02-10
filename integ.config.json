@@ -1,0 +1,7 @@
+{
+    "verbose": true,
+    "directory": "src/test/integ",
+    "profiles": ["integ"],
+    "inspect-failures": true,
+    "update-on-failed": true
+}

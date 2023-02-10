@@ -1,0 +1,20 @@
+!jest.config.js
+*.d.ts
+node_modules
+lib/**/*.js
+src/
+.aws/
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+coverage/
+test/coverage.xml
+test.ts
+*error.log
+.npmrc
+.DS_STORE
+local.*
+repolinter/
+.DS_Store
+package-lock.json
+gitlab-ci.yaml
