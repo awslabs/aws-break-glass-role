@@ -12,7 +12,7 @@
     "integ": "integ-runner",
     "integ-local": "npm run build && integ-runner",
     "prepare": "npm run build",
-    "release": "npm version ${NEXT_VERSION:-patch} -m \"v%s\" && git push origin main"
+    "release": "npm version patch -m \"v%s\" && git push origin main"
   },
   "license": "MIT",
   "devDependencies": {
