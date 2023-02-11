@@ -19,12 +19,17 @@ jobs:
         node-version: 18
     - run: |
         npm ci 
+        npm link
+        npm test
+        break-glass signin 
+        break-glass cleanup us-east-1 us-east-2 us-west-2 
+        npm run integ
       env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
           CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
-    - run: zip -r aws-break-glass-role.zip ./src ./lib ./bin README.md package.json .gitignore
+    - run: zip -r aws-break-glass-role.zip ./src ./lib ./bin README.md package.json .gitignore LICENSE tsconfig.json CODE_OF_CONDUCT.md CONTRIBUTING.md NOTICE
     - name: get-npm-version
       id: package-version
       uses: martinbeentjes/npm-get-version-action@main
