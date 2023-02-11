@@ -43,6 +43,7 @@ jobs:
           !package-lock.json
           !.github
     - name: Get Artifact
+      id: download-artifact
       uses: actions/download-artifact@v3
       with:
         name: aws-break-glass-role
@@ -55,7 +56,17 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.package-version.outputs.current-version }}
-        release_name: ${{ github.repository }}
+        tag_name: v${{ steps.package-version.outputs.current-version }}
+        release_name: aws-break-glass-role@${{steps.package-version.outputs.current-version}}
         draft: false
         prerelease: false
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ${{ steps.download-artifact.outputs.download-path }}
+        asset_name: aws-break-glass-role.zip
+        asset_content_type: application/zip
