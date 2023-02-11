@@ -58,6 +58,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ${{ steps.package-artifact.outpus.aws-break-glass-role }}
+        asset_path: ${{ steps.package-artifact.outputs.aws-break-glass-role }}
         asset_name: aws-break-glass-role.zip
         asset_content_type: application/zip

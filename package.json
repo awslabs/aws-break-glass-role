@@ -11,7 +11,8 @@
     "test": "jest --ci --reporters=default --coverage",
     "integ": "integ-runner",
     "integ-local": "npm run build && integ-runner",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "release": "npm version minor && npm push origin main"
   },
   "license": "MIT",
   "devDependencies": {
