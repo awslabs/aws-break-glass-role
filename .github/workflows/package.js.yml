@@ -61,3 +61,4 @@ jobs:
         asset_path: ${{ steps.package-artifact.outputs.aws-break-glass-role }}
         asset_name: aws-break-glass-role.zip
         asset_content_type: application/zip
+    - run: ls
