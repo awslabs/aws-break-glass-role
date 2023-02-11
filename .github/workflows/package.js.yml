@@ -19,13 +19,13 @@ jobs:
         node-version: 18
     - run: |
         npm ci 
-
       env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
           CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
     - name: Package Artifact
+      id: package-artifact
       uses: actions/upload-artifact@v3
       with:
         name: aws-break-glass-role
@@ -37,12 +37,6 @@ jobs:
           !lib/util/assets
           !package-lock.json
           !.github
-    - name: Get Artifact
-      id: download-artifact
-      uses: actions/download-artifact@v3
-      with:
-        name: aws-break-glass-role
-    - run: zip -r aws-break-glass-role.zip ${{ steps.download-artifact.outputs.download-path }}
     - name: get-npm-version
       id: package-version
       uses: martinbeentjes/npm-get-version-action@main
@@ -63,6 +57,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: aws-break-glass-role.zip
+        asset_path: ${{ steps.package-artifact.outpus.aws-break-glass-role }}
         asset_name: aws-break-glass-role.zip
         asset_content_type: application/zip
