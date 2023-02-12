@@ -1,4 +1,4 @@
-# AWS CDK Break Glass Role
+# AWS Break Glass Role
 
 ![License](https://img.shields.io/github/license/awslabs/aws-break-glass-role?style=plastic)
 ![Version](https://img.shields.io/github/package-json/v/awslabs/aws-break-glass-role?style=plastic)
