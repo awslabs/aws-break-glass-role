@@ -14,7 +14,7 @@
     "prepare": "npm run build",
     "release": "npm version patch -m \"v%s\" && git push origin main"
   },
-  "license": "MIT",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@aws-cdk/integ-runner": "^2.55.1",
     "@aws-cdk/integ-tests-alpha": "^2.55.1-alpha.0",
