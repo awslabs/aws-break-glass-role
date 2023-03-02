@@ -240,7 +240,7 @@ Setting `deployer` will create a role with Least-Privilege permissions set for d
 In addition to the main `BreakGlassRole`, `BreakGlassLoginAlert`, `BreakGlassLogActions`, and `BreakGlassDeployer` are all available as separate constructs. The major difference when using these constructs separately is that the `BreakGlassRole` cannot be created internally and an `IRole` must be passed to them as the `BreakGlassRole`.
 
 ## Architecture
-[![Break Glass Role Diagram](lib/util/assets/break-glass-role-cdk.png)](https://tiny.amazon.com/24lcxoj8/desia2z)
+[![Break Glass Role Diagram](lib/util/assets/break-glass-role-cdk.png)](https://github.com/awslabs/aws-break-glass-role/raw/main/lib/util/assets/break-glass-role-cdk.png)
 
 ## Security
 
