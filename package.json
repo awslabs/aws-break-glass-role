@@ -20,6 +20,11 @@
     "type": "git",
     "url": "https://github.com/awslabs/aws-break-glass-role"
   },
+  "keywords": [
+    "aws",
+    "breakglassrole",
+    "cdk"
+  ],
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
     "watch": "tsc -w",
