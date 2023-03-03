@@ -4,19 +4,18 @@
   "version": "1.6.3",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "bin": {
-    "break-glass": "./bin/index.js"
-  },
   "author": {
     "name": "Steven Guggenheimer",
     "email": "sguggenh@amazon.com",
     "url": "https://github.com/smguggen"
   },
-  "contributors": [{
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
-  }],
+  "contributors": [
+    {
+      "name": "Ryan Sonshine",
+      "email": "ryansonshine@users.noreply.github.com",
+      "url": "https://github.com/ryansonshine"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/awslabs/aws-break-glass-role"
@@ -28,7 +27,7 @@
     "integ": "integ-runner",
     "integ-local": "npm run build && integ-runner",
     "prepare": "npm run build",
-    "release": "npm version patch -m \"v%s\" && git push origin main"
+    "semantic-release": "semantic-release"
   },
   "license": "Apache-2.0",
   "devDependencies": {
@@ -36,8 +35,10 @@
     "@aws-cdk/integ-tests-alpha": "^2.55.1-alpha.0",
     "@types/jest": "^29.2.4",
     "@types/node": "^18.11.15",
+    "aws-sdk": "^2.1282.0",
     "constructs": "^10.0.0",
     "jest": "^29.3.1",
+    "semantic-release": "^20.1.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.4"
   },
@@ -45,7 +46,51 @@
     "node": ">= 16.15.0"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.55.1",
-    "aws-sdk": "^2.1282.0"
+    "aws-cdk-lib": "^2.55.1"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "type": "build",
+              "scope": "deps",
+              "release": "patch"
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits",
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Features"
+              },
+              {
+                "type": "fix",
+                "section": "Bug Fixes"
+              },
+              {
+                "type": "build",
+                "section": "Dependencies and Other Build Updates",
+                "hidden": false
+              }
+            ]
+          }
+        }
+      ],
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
   }
 }

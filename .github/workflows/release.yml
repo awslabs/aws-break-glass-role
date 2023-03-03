@@ -1,0 +1,32 @@
+name: Package Artifacts
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Test and Build Package
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+    - run: |
+        npm ci
+        npm test
+        node ./scripts/index.js signin
+        node ./scripts/index.js cleanup us-east-1 us-east-2 us-west-2
+        npm run integ
+      env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
+          CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
+    - name: Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: npm run semantic-release
