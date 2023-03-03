@@ -3,6 +3,8 @@
 ![License](https://img.shields.io/github/license/awslabs/aws-break-glass-role?style=plastic)
 ![Version](https://img.shields.io/github/package-json/v/awslabs/aws-break-glass-role?style=plastic)
 ![Build](https://img.shields.io/github/actions/workflow/status/awslabs/aws-break-glass-role/package.js.yml?style=plastic)
+![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)
+![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)
 
 ***Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.***
 
