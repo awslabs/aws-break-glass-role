@@ -2,15 +2,27 @@
   "name": "aws-break-glass-role",
   "description": "Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.",
   "version": "1.6.3",
-  "main": "src/lib/index.js",
-  "types": "src/types/lib/index.d.ts",
-  "author": "sguggenh@amazon.com",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "bin": {
+    "break-glass": "./bin/index.js"
+  },
+  "author": {
+    "name": "Steven Guggenheimer",
+    "email": "sguggenh@amazon.com",
+    "url": "https://github.com/smguggen"
+  },
+  "contributors": [{
+    "name": "Ryan Sonshine",
+    "email": "ryansonshine@users.noreply.github.com",
+    "url": "https://github.com/ryansonshine"
+  }],
   "repository": {
     "type": "git",
     "url": "https://github.com/awslabs/aws-break-glass-role"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "watch": "tsc -w",
     "test": "jest --ci --reporters=default --coverage",
     "integ": "integ-runner",
@@ -35,8 +47,5 @@
   "dependencies": {
     "aws-cdk-lib": "^2.55.1",
     "aws-sdk": "^2.1282.0"
-  },
-  "bin": {
-    "break-glass": "./bin/index.js"
   }
 }

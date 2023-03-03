@@ -4,8 +4,7 @@
     "module": "commonjs",
     "lib": ["es2016", "es2017.object", "es2017.string"],
     "declaration": true,
-    "outDir": "./src/",
-    "declarationDir": "./src/types",
+    "outDir": "./lib/",
     "strict": true,
     "noImplicitAny": false,
     "strictNullChecks": true,
@@ -22,6 +21,5 @@
     "resolveJsonModule": true,
     "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["./lib/**/*", "./test/**/*", "index.d.ts"],
-  "exclude": ["cdk.out","build","node_modules","dist","src"]
+  "include": ["src/**/*", "test/**/*"]
 }
