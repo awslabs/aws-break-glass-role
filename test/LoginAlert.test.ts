@@ -1,12 +1,12 @@
 import { Match, Template } from 'aws-cdk-lib/assertions';
-import { BreakGlassLoginAlert as LoginAlert } from '../lib/constructs/LoginAlert';
+import { BreakGlassLoginAlert as LoginAlert } from '../src/constructs/LoginAlert';
 import { App, Stack } from 'aws-cdk-lib';
-import { SigninTargetInput } from '../lib/input/signin';
+import { SigninTargetInput } from '../src/input/signin';
 import { AccountPrincipal, Role } from 'aws-cdk-lib/aws-iam';
 import { testName, detail, loginAlertRule } from './variables';
 
-let app:App, 
-    stack:Stack, 
+let app:App,
+    stack:Stack,
     template: Template,
     con:LoginAlert
 describe("BreakGlassLoginAlert", () => {
@@ -161,7 +161,7 @@ describe("BreakGlassLoginAlert", () => {
             }),
             message: "User <principal> logged in at <eventTime>"
         });
-        
+
         template = Template.fromStack(stack);
         expect(msgSpy).toHaveBeenCalled();
         template.hasResourceProperties('AWS::Events::Rule', {

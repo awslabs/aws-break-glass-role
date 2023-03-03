@@ -1,10 +1,10 @@
 import { Match, Template } from 'aws-cdk-lib/assertions';
 import { App, Stack } from 'aws-cdk-lib';
-import { BreakGlassLogActions as LogActions } from '../lib/constructs/LogActions';
+import { BreakGlassLogActions as LogActions } from '../src/constructs/LogActions';
 import { testName, detail } from './variables';
 
-let app:App, 
-    stack:Stack, 
+let app:App,
+    stack:Stack,
     template: Template,
     con:LogActions
 
@@ -91,7 +91,7 @@ describe("BreakGlassLogActions", () => {
                     ...detail,
                     readOnly: [true]
                 }
-            }        
+            }
         });
     });
 

@@ -1,11 +1,11 @@
 import { Match, Template } from 'aws-cdk-lib/assertions';
-import { BreakGlassRole } from '../lib/constructs/BreakGlassRole';
+import { BreakGlassRole } from '../src/constructs/BreakGlassRole';
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountPrincipal, Effect, ManagedPolicy, PolicyStatement, Role, User } from 'aws-cdk-lib/aws-iam';
 import { testName, Principal, detail, loginAlertRule, logActionsRule } from './variables';
 
-let app:App, 
-    stack:Stack, 
+let app:App,
+    stack:Stack,
     template: Template,
     consoleWarn: any
 describe('BreakGlassRole', () => {
@@ -43,7 +43,7 @@ describe('BreakGlassRole', () => {
                             }
                         }
                     }
-                ]        
+                ]
             },
             RoleName: "myRole"
         });
@@ -76,12 +76,12 @@ describe('BreakGlassRole', () => {
                         ]
                     ]
                 }
-            ],        
+            ],
             RoleName: `${testName}-break-glass`
         });
     });
 
-     
+
     it('Creates Role From Role Props With Custom Managed Policy', () => {
         new BreakGlassRole(stack, testName, {
             usernames: ["myUser"],

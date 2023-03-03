@@ -1,6 +1,6 @@
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountPrincipal, Role } from 'aws-cdk-lib/aws-iam';
-import { BreakGlassLoginAlert } from "../../lib/constructs/LoginAlert";
+import { BreakGlassLoginAlert } from "../../src/constructs/LoginAlert";
 import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import { RequireApproval } from 'aws-cdk-lib/cloud-assembly-schema';
 import { env } from '../variables';
@@ -62,7 +62,7 @@ new BreakGlassLoginAlert(stack, 'my-integ-login-alert-6', {
     loginAlertEmails: ["myEmail@me.com", "myEmail@example.com", "myEmail@mail.com"]
 });
 
-new IntegTest(app, 'integ-login-alert', { 
+new IntegTest(app, 'integ-login-alert', {
     testCases: [stack],
     diffAssets: true,
   stackUpdateWorkflow: true,

@@ -1,6 +1,6 @@
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountRootPrincipal, Role, User } from 'aws-cdk-lib/aws-iam';
-import { BreakGlassDeployer } from "../../lib/constructs/Deployer";
+import { BreakGlassDeployer } from "../../src/constructs/Deployer";
 import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import { RequireApproval } from 'aws-cdk-lib/cloud-assembly-schema';
 import { env } from '../variables';
@@ -36,7 +36,7 @@ new BreakGlassDeployer(stack, 'my-integ-deployer-5', {
 new BreakGlassDeployer(stack, 'my-integ-deployer-6');
 
 
-new IntegTest(app, 'integ-deployer', { 
+new IntegTest(app, 'integ-deployer', {
     testCases: [stack],
     diffAssets: true,
   stackUpdateWorkflow: true,

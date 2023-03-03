@@ -1,12 +1,12 @@
 import { Match, Template } from 'aws-cdk-lib/assertions';
-import { BreakGlassDeployer } from '../lib/constructs/Deployer';
+import { BreakGlassDeployer } from '../src/constructs/Deployer';
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountPrincipal, AccountRootPrincipal, Group, IUser, User } from 'aws-cdk-lib/aws-iam';
 import { Role } from 'aws-cdk-lib/aws-iam';
 import { testName } from './variables';
 
-let app:App, 
-    stack:Stack, 
+let app:App,
+    stack:Stack,
     template: Template;
 
 const PolicyName = Match.objectLike({
@@ -82,7 +82,7 @@ describe('BreakGlassDeployer', () => {
             Roles: [{
                 Ref: Match.stringLikeRegexp(`${testName}deployer`)
             }],
-            PolicyDocument: { Statement }                
+            PolicyDocument: { Statement }
         });
     });
 
@@ -99,7 +99,7 @@ describe('BreakGlassDeployer', () => {
             Users: [{
                 Ref: Match.stringLikeRegexp(`${testName}deployer`)
             }],
-            PolicyDocument: { Statement }                
+            PolicyDocument: { Statement }
         });
     });
 
@@ -113,7 +113,7 @@ describe('BreakGlassDeployer', () => {
         template.resourceCountIs('AWS::IAM::User', 0);
         template.hasResourceProperties('AWS::IAM::Policy', {
             PolicyName,
-            Users: ['integ-user']               
+            Users: ['integ-user']
         });
     });
 
@@ -127,7 +127,7 @@ describe('BreakGlassDeployer', () => {
         template.resourceCountIs('AWS::IAM::User', 0);
         template.hasResourceProperties('AWS::IAM::Policy', {
             PolicyName,
-            Users: ['integ-user']               
+            Users: ['integ-user']
         });
     });
 
@@ -141,7 +141,7 @@ describe('BreakGlassDeployer', () => {
         template.resourceCountIs('AWS::IAM::User', 0);
         template.hasResourceProperties('AWS::IAM::Policy', {
             PolicyName,
-            Roles: ['integ-role']               
+            Roles: ['integ-role']
         });
     });
 
@@ -158,7 +158,7 @@ describe('BreakGlassDeployer', () => {
             Users: [{
                 Ref: Match.stringLikeRegexp('myUser')
             }],
-            PolicyDocument: { Statement }          
+            PolicyDocument: { Statement }
         });
     });
 
@@ -175,7 +175,7 @@ describe('BreakGlassDeployer', () => {
             Users: [{
                 Ref: Match.stringLikeRegexp('myUser')
             }],
-            PolicyDocument: { Statement }          
+            PolicyDocument: { Statement }
         });
     });
 
@@ -217,7 +217,7 @@ describe('BreakGlassDeployer', () => {
             PolicyName,
             Roles: [{
                 Ref: Match.stringLikeRegexp('myUser')
-            }]            
+            }]
         });
     });
 
@@ -238,7 +238,7 @@ describe('BreakGlassDeployer', () => {
             Roles: [{
                 Ref: Match.stringLikeRegexp('myUser')
             }],
-            PolicyDocument: { 
+            PolicyDocument: {
                 Statement: [
                     ...Statement,
                     Match.objectLike({
@@ -249,8 +249,8 @@ describe('BreakGlassDeployer', () => {
                             ])
                         })
                     })
-                ]   
-            }        
+                ]
+            }
         });
     });
 

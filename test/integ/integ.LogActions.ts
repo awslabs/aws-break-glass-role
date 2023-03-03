@@ -1,6 +1,6 @@
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountPrincipal, Role } from 'aws-cdk-lib/aws-iam';
-import { BreakGlassLogActions } from "../../lib/constructs/LogActions";
+import { BreakGlassLogActions } from "../../src/constructs/LogActions";
 import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import { RequireApproval } from 'aws-cdk-lib/cloud-assembly-schema';
 import { env } from '../variables';
@@ -20,7 +20,7 @@ new BreakGlassLogActions(stack, 'my-integ-log-actions-2', {
     role: new Role(stack, 'myRole-1', {
         assumedBy: new AccountPrincipal(stack.account),
         roleName: `myRole-1-${env.region}`
-    }), 
+    }),
     retention: RetentionDays.ONE_DAY
 });
 
@@ -43,7 +43,7 @@ new BreakGlassLogActions(stack, 'my-integ-log-actions-5', {
     retention: RetentionDays.ONE_DAY
 });
 
-new IntegTest(app, 'integ-log-actions', { 
+new IntegTest(app, 'integ-log-actions', {
     testCases: [stack],
     diffAssets: true,
   stackUpdateWorkflow: true,

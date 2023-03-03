@@ -1,6 +1,6 @@
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountPrincipal, Effect, ManagedPolicy, PolicyStatement, Role } from 'aws-cdk-lib/aws-iam';
-import { BreakGlassRole } from "../../lib/constructs/BreakGlassRole";
+import { BreakGlassRole } from "../../src/constructs/BreakGlassRole";
 import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import { RequireApproval } from 'aws-cdk-lib/cloud-assembly-schema';
 import { env } from '../variables';
@@ -99,7 +99,7 @@ new BreakGlassRole(stack, 'my-integ-break-glass-role-9', {
   }
 );
 
-new IntegTest(app, 'integ-break-glass-role', { 
+new IntegTest(app, 'integ-break-glass-role', {
     testCases: [stack],
     diffAssets: true,
   stackUpdateWorkflow: true,
