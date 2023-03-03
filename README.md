@@ -29,6 +29,12 @@ Often when undergoing security reviews for applications in a full CI/CD deployme
 In these cases it may be necessary to provision a user or role with elevated permissions to be used only in emergency cases. This type of role is typically called a "Break Glass Role" and is usually used in On Call situations or other circumstances when quick mitigating action is needed.
 
 Since Break Glass roles aren't supposed to be assumed on a regular basis, it's a good idea to outfit the role with alerts when someone assumes it and/or logging of the actions performed using it. So the purpose of this package is to automate this entire process - from the creation of the role to the login alerts to the logging of activities. If the break glass role already exists, it can be passed in as an argument as well.
+
+## Install
+
+```bash
+npm install aws-break-glass-role
+```
   
 ## Basic Implementation
 The only required property for the `BreakGlassRole` Resource is `usernames`. `Usernames` is a list of user identities that will be assuming the break glass role. If federated access is used, the user identity for the role can be found in the assumed role ARN contained in the signin event. The format of the ARN will be `<RoleArn>:role/<RoleName>/<UserIdentity>`.
