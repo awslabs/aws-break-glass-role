@@ -11,3 +11,4 @@ test/coverage.xml
 test.ts
 .git/
 .github/
+*.config.json
