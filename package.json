@@ -27,10 +27,11 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
+    "test-build": "tsc --project tsconfig.test.json",
     "watch": "tsc -w",
     "test": "jest --ci --reporters=default --coverage",
     "integ": "integ-runner",
-    "integ-local": "npm run build && integ-runner",
+    "integ-local": "npm run test-build && integ-runner",
     "prepare": "husky install",
     "semantic-release": "semantic-release"
   },

@@ -7,7 +7,7 @@ node_modules
 .cdk.staging
 cdk.out
 coverage/
-test/coverage.xml
+test/
 test.ts
 .git/
 .github/
