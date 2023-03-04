@@ -3,7 +3,7 @@
   "description": "Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.",
   "version": "1.6.3",
   "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "types": "./lib/types/index.d.ts",
   "author": {
     "name": "Steven Guggenheimer",
     "email": "sguggenh@amazon.com",
