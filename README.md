@@ -1,10 +1,10 @@
 # AWS Break Glass Role
 
 ![License](https://img.shields.io/github/license/awslabs/aws-break-glass-role?style=plastic)
-![Version](https://img.shields.io/github/v/release/awslabs/aws-break-glass-role?style=plastic)
+![Version](https://img.shields.io/npm/v/aws-break-glass-role?style=plastic)
 ![Build](https://img.shields.io/github/actions/workflow/status/awslabs/aws-break-glass-role/release.yml?style=plastic)
-![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)
-![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)
+![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=plastic)
+![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=plastic)
 
 ***Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.***
 
@@ -248,7 +248,7 @@ Setting `deployer` will create a role with Least-Privilege permissions set for d
 In addition to the main `BreakGlassRole`, `BreakGlassLoginAlert`, `BreakGlassLogActions`, and `BreakGlassDeployer` are all available as separate constructs. The major difference when using these constructs separately is that the `BreakGlassRole` cannot be created internally and an `IRole` must be passed to them as the `BreakGlassRole`.
 
 ## Architecture
-[![Break Glass Role Diagram](src/util/assets/break-glass-role-cdk.png)](https://github.com/awslabs/aws-break-glass-role/raw/main/src/util/assets/break-glass-role-cdk.png)
+[![Break Glass Role Diagram](assets/break-glass-role-cdk.png)](https://github.com/awslabs/aws-break-glass-role/raw/main/assets/break-glass-role-cdk.png)
 
 ## Security
 

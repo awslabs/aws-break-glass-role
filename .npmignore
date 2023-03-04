@@ -1,6 +1,3 @@
-*.ts
-!*.d.ts
-
 .aws/
 node_modules
 # CDK asset staging directory
@@ -9,7 +6,6 @@ cdk.out
 coverage/
 test/
 src/
-!src/util/assets
 test.ts
 .git/
 .github/
