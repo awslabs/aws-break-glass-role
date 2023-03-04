@@ -1,7 +1,15 @@
 import { Resource, Stack } from "aws-cdk-lib";
-import { AccountRootPrincipal, IRole, IUser, Policy, Effect, PolicyStatement, Role, User } from "aws-cdk-lib/aws-iam";
 import { Construct } from "constructs";
-
+import { 
+    AccountRootPrincipal, 
+    IRole, 
+    IUser, 
+    Policy, 
+    Effect, 
+    PolicyStatement, 
+    Role, 
+    User 
+} from "aws-cdk-lib/aws-iam";
 
 export interface BreakGlassDeployerProps {
     breakGlassRole?: IRole

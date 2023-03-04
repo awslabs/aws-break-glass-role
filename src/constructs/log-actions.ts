@@ -1,5 +1,5 @@
 import { BreakGlassConstructBase } from "../util/construct-base";
-import { BreakGlassBaseProps, EventPatternField } from "../types";
+import { BreakGlassBaseProps } from "../types";
 import { LogActionsRule } from "../events/rules/log-actions";
 import { Construct } from "constructs";
 

@@ -1,4 +1,14 @@
-import { AccountPrincipal, ArnPrincipal, CompositePrincipal, Effect, IManagedPolicy, IPrincipal, IRole, ManagedPolicy, PolicyDocument, PolicyStatement, Role } from "aws-cdk-lib/aws-iam";
+import { 
+    AccountPrincipal, 
+    Effect, 
+    IManagedPolicy, 
+    IPrincipal, 
+    IRole, 
+    ManagedPolicy, 
+    PolicyDocument, 
+    PolicyStatement, 
+    Role 
+} from "aws-cdk-lib/aws-iam";
 import { Construct } from "constructs";
 import { BreakGlassBaseProps, BreakGlassRoleProps } from "../types";
 import { BreakGlassBase } from "../util/base";
