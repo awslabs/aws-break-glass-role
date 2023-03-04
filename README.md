@@ -116,7 +116,7 @@ To send email alerts, pass a list of email addresses to the `loginAlertEmails` p
 ```
 The above implementation imports an existing role and sends alerts to the emails in `loginAlertEmails` whenever `myUser` assumes the role in the default region. Future versions of this package will allow for SMS and push notification alerts as well.
 
-This alerts are created using an [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) rule with an [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) target. The only manual step involved in activating this is that the recipients of the emails must confirm the SNS subscription before receiving alerts.
+The alerts are created using an [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) rule with an [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) target. The only manual step involved in activating this is that the recipients of the emails must confirm the SNS subscription before receiving alerts.
 
 ### Messages
 By default the Login Alerts will be sent as an unformatted JSON string of the Login event, but if you want to customize how the information is presented, you can use the `message` field. Some of the fields in the event can be referred to in this custom message using the following field names:
