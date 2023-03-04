@@ -8,7 +8,9 @@ node_modules
 cdk.out
 coverage/
 test/
+src/
+!src/util/assets
 test.ts
 .git/
 .github/
-*.config.json
+*.config.*

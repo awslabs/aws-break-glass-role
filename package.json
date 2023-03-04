@@ -1,7 +1,7 @@
 {
   "name": "aws-break-glass-role",
   "description": "Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.",
-  "version": "1.6",
+  "version": "0.0.0-development",
   "main": "./lib/index.js",
   "types": "./lib/types/index.d.ts",
   "author": {
