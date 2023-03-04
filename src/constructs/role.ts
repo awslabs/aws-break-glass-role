@@ -15,7 +15,7 @@ import { BreakGlassBase } from "../util/base";
 import { BreakGlassLogActions } from "./log-actions";
 import { BreakGlassLoginAlert } from "./login-alert";
 import { CfnOutput, Stack } from "aws-cdk-lib";
-import { BreakGlassDeployer } from "./deployer";
+import { BreakGlassDeployer } from "./deploy";
 
 export class BreakGlassRole extends BreakGlassBase {
     role: IRole;

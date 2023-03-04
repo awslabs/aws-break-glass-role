@@ -1,5 +1,5 @@
 import { Match, Template } from 'aws-cdk-lib/assertions';
-import { BreakGlassDeployer } from '../src/constructs/deployer';
+import { BreakGlassDeployer } from '../src/constructs/deploy';
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountPrincipal, AccountRootPrincipal, Group, IUser, User } from 'aws-cdk-lib/aws-iam';
 import { Role } from 'aws-cdk-lib/aws-iam';
