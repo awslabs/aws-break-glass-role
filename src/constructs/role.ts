@@ -2,10 +2,10 @@ import { AccountPrincipal, ArnPrincipal, CompositePrincipal, Effect, IManagedPol
 import { Construct } from "constructs";
 import { BreakGlassBaseProps, BreakGlassRoleProps } from "../types";
 import { BreakGlassBase } from "../util/base";
-import { BreakGlassLogActions } from "./LogActions";
-import { BreakGlassLoginAlert } from "./LoginAlert";
+import { BreakGlassLogActions } from "./log-actions";
+import { BreakGlassLoginAlert } from "./login-alert";
 import { CfnOutput, Stack } from "aws-cdk-lib";
-import { BreakGlassDeployer } from "./Deployer";
+import { BreakGlassDeployer } from "./deployer";
 
 export class BreakGlassRole extends BreakGlassBase {
     role: IRole;

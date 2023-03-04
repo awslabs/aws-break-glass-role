@@ -1,5 +1,5 @@
 import { Match, Template } from 'aws-cdk-lib/assertions';
-import { BreakGlassLoginAlert as LoginAlert } from '../src/constructs/LoginAlert';
+import { BreakGlassLoginAlert as LoginAlert } from '../src/constructs/login-alert';
 import { App, Stack } from 'aws-cdk-lib';
 import { SigninTargetInput } from '../src/input/signin';
 import { AccountPrincipal, Role } from 'aws-cdk-lib/aws-iam';

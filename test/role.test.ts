@@ -1,5 +1,5 @@
 import { Match, Template } from 'aws-cdk-lib/assertions';
-import { BreakGlassRole } from '../src/constructs/BreakGlassRole';
+import { BreakGlassRole } from '../src/constructs/role';
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountPrincipal, Effect, ManagedPolicy, PolicyStatement, Role, User } from 'aws-cdk-lib/aws-iam';
 import { testName, Principal, detail, loginAlertRule, logActionsRule } from './variables';

@@ -1,6 +1,6 @@
 import { Match, Template } from 'aws-cdk-lib/assertions';
 import { App, Stack } from 'aws-cdk-lib';
-import { BreakGlassLogActions as LogActions } from '../src/constructs/LogActions';
+import { BreakGlassLogActions as LogActions } from '../src/constructs/log-actions';
 import { testName, detail } from './variables';
 
 let app:App,

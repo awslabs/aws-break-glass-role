@@ -1,6 +1,6 @@
 import { App, Stack } from 'aws-cdk-lib';
 import { AccountRootPrincipal, Role, User } from 'aws-cdk-lib/aws-iam';
-import { BreakGlassDeployer } from "../../src/constructs/Deployer";
+import { BreakGlassDeployer } from "../../src/constructs/deployer";
 import { IntegTest } from '@aws-cdk/integ-tests-alpha';
 import { RequireApproval } from 'aws-cdk-lib/cloud-assembly-schema';
 import { env } from '../variables';
