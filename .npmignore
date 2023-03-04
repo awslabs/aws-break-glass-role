@@ -10,4 +10,3 @@ coverage/
 test/coverage.xml
 test.ts
 .git/
-lib/util/assets

@@ -20,6 +20,7 @@ jobs:
         node-version: lts/*
     - run: |
         npm ci
+        npm run build
         npm test
         node ./scripts/index.js signin
         node ./scripts/index.js cleanup us-east-1 us-east-2 us-west-2
