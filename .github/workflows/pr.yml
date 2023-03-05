@@ -22,14 +22,14 @@ jobs:
         node-version: lts/*
     - run: |
         npm ci
-        npx jest --coverage --onlyChanged --coverageThreshold='{"global":{"lines":90}} --passWithNoTests=false' 
         npm run build
+        npx jest --coverage --changedFilesWithAncestor --coverageThreshold='{"global":{"lines":90}} --passWithNoTests=false' 
         npm test
     - name: OnFail
       if: failure() && steps.test_package.outcome == 'failure'
       uses: andrewmusgrave/automatic-pull-request-review@0.0.5
       with:
         event: DISMISS
-        body: "Pull requests must have a minimum of 90% coverage on new code, build successfully, and pass all current unit tests in order to be accepted. Please update and resubmit."
+        body: "Pull requests must have a minimum of 80% coverage on new code, build successfully, and pass all current unit tests in order to be accepted. Please update and resubmit."
 
 
