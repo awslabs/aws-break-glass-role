@@ -20,7 +20,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: lts/*
-    - run: |
+    - name: build
+      if: "!startsWith(github.event.head_commit.message, 'chore')"
+      run: |
         npm ci
         npm run build
         npm test
