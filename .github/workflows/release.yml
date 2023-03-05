@@ -13,19 +13,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      if: "!startsWith(github.event.head_commit.message, 'chore')"
       uses: actions/checkout@v3
     - name: Test and Build Package
-      if: "!startsWith(github.event.head_commit.message, 'chore')"
       uses: actions/setup-node@v3
       with:
         node-version: lts/*
     - name: build
-      if: "!startsWith(github.event.head_commit.message, 'chore:')"
       run: |
         npm ci
         npm run build
+    - name: test
+      run: |
         npm test
+    - name: integ
+      if: "!startsWith(github.event.head_commit.message, 'chore') && !startsWith(github.event.head_commit.message, 'ci')"
+      run: |
         node ./scripts/index.js signin
         node ./scripts/index.js cleanup us-east-1 us-east-2 us-west-2
         npm run integ
@@ -35,7 +37,7 @@ jobs:
           CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
           CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
     - name: Release
-      if: "!startsWith(github.event.head_commit.message, 'chore')"
+      if: "!startsWith(github.event.head_commit.message, 'chore') && !startsWith(github.event.head_commit.message, 'ci')"      
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
