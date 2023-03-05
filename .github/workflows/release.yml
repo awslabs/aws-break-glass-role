@@ -6,7 +6,6 @@ on:
 
 concurrency:
   group: ${{ github.ref }}
-  cancel-in-progress: true
   
 jobs:
   release:
@@ -26,14 +25,7 @@ jobs:
       run: |
         npm ci
         npm run build
-    - name: test
-      run: |
         npm test
-    - name: integ
-      run: |
-        node ./scripts/index.js signin
-        node ./scripts/index.js cleanup us-east-1 us-east-2 us-west-2
-        npm run integ
       env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

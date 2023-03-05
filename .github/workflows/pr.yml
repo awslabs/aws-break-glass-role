@@ -27,7 +27,7 @@ jobs:
         npm run build
         npm test
     - name: OnFail
-      if: failure() && steps.run_commands.outcome == 'failure'
+      if: failure()
       uses: andrewmusgrave/automatic-pull-request-review@0.0.5
       with:
         event: DISMISS
