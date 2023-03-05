@@ -23,7 +23,7 @@ jobs:
     - run: |
         npm ci
         npm run build
-        npx jest --coverage --changedFilesWithAncestor --coverageThreshold='{"global":{"lines":90}}' 
+        npx jest --coverage --changedFilesWithAncestor --coverageThreshold='{"global":{"lines":90}} --passWithNoTests=false' 
         npm test
     - name: OnFail
       if: failure() && steps.test_package.outcome == 'failure'
