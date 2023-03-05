@@ -29,7 +29,7 @@
     "build": "tsc --project tsconfig.build.json",
     "test-build": "tsc --project tsconfig.test.json",
     "watch": "tsc -w",
-    "test": "jest --ci --reporters=default --coverage",
+    "test": "jest --ci --reporters=default --coverage \".*\\..*\"",
     "integ": "npm run test-build && integ-runner",
     "prepare": "husky install",
     "verify-release": "node ./scripts/index.js signin && node ./scripts/index.js cleanup us-east-1 us-east-2 us-west-2 && npm run integ",
