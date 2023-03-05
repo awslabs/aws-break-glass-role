@@ -1,0 +1,31 @@
+name: PR Assigned
+
+on:
+  pull_request_target:
+    types:
+      - assigned
+    branches: ['main']
+jobs:
+  integ:
+    name: "PR Run Integ"
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Test and Build Package
+      id: test_package
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+    - run: |
+        npm ci
+        npm run build
+        npm run integ
+    - name: OnFail
+      if: failure() && steps.test_package.outcome == 'failure'
+      uses: andrewmusgrave/automatic-pull-request-review@0.0.5
+      with:
+        event: DISMISS
+        body: "Pull request failed integ test. Please fix and resubmit."
+
+
