@@ -32,6 +32,7 @@
     "test": "jest --ci --reporters=default --coverage",
     "integ": "npm run test-build && integ-runner",
     "prepare": "husky install",
+    "verify-release": "node ./scripts/index.js signin && node ./scripts/index.js cleanup us-east-1 us-east-2 us-west-2 && npm run integ",
     "semantic-release": "semantic-release"
   },
   "license": "Apache-2.0",
@@ -40,6 +41,7 @@
     "@aws-cdk/integ-tests-alpha": "^2.55.1-alpha.0",
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@semantic-release/exec": "^6.0.3",
     "@types/jest": "^29.2.4",
     "@types/node": "^18.11.15",
     "aws-sdk": "^2.1282.0",
@@ -98,6 +100,12 @@
               }
             ]
           }
+        }
+      ],
+      [
+        "@semantic-release/exec",
+        {
+          "verifyReleaseCmd": "npm run verify-release"
         }
       ],
       "@semantic-release/npm",
