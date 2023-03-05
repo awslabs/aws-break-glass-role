@@ -41,6 +41,7 @@
     "@aws-cdk/integ-tests-alpha": "^2.55.1-alpha.0",
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
+    "@semantic-release/exec": "^6.0.3",
     "@types/jest": "^29.2.4",
     "@types/node": "^18.11.15",
     "aws-sdk": "^2.1282.0",
