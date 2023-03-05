@@ -32,7 +32,7 @@
     "test": "jest --ci --reporters=default --coverage",
     "integ": "npm run test-build && integ-runner",
     "prepare": "husky install",
-    "verify-conditions": "node ./scripts/index.js signin && node ./scripts/index.js cleanup us-east-1 us-east-2 us-west-2 && npm run integ",
+    "verify-release": "node ./scripts/index.js signin && node ./scripts/index.js cleanup us-east-1 us-east-2 us-west-2 && npm run integ",
     "semantic-release": "semantic-release"
   },
   "license": "Apache-2.0",
@@ -105,7 +105,7 @@
       [
         "@semantic-release/exec",
         {
-          "verifyConditionsCmd": "npm run verify-conditions"
+          "verifyReleaseCmd": "npm run verify-release"
         }
       ],
       "@semantic-release/npm",
