@@ -40,6 +40,14 @@ export class BreakGlassDeployer extends Resource {
         ))
     }
 
+    testPRWorkflow() {
+        new PolicyStatement({
+            effect: Effect.ALLOW,
+            actions: ['sts:AssumeRoleWithWebIdentity'],
+            resources: [`arn:aws:iam::${Stack.of(this).account}:role/cdk-*`]
+        })
+    }
+
     getDeployerPermissions(): PolicyStatement[] {
         const res = [
             new PolicyStatement({
