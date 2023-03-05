@@ -22,8 +22,8 @@ jobs:
         node-version: lts/*
     - run: |
         npm ci
+        npx jest --coverage --onlyChanged --coverageThreshold='{"global":{"lines":90}} --passWithNoTests=false' 
         npm run build
-        npx jest --coverage --changedSince=main --coverageThreshold='{"global":{"lines":90}} --passWithNoTests=false' 
         npm test
     - name: OnFail
       if: failure() && steps.test_package.outcome == 'failure'
