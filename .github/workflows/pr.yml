@@ -10,7 +10,7 @@ on:
     branches: ['main']
 jobs:
   scan:
-    name: "Scan PR"
+    name: scan_pr
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -20,13 +20,14 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: lts/*
-    - run: |
+    - name: run_commands
+      run: |
         npm ci
         npx jest --coverage --onlyChanged --coverageThreshold='{"global":{"lines":90}}' --passWithNoTests=false 
         npm run build
         npm test
     - name: OnFail
-      if: failure() && steps.test_package.outcome == 'failure'
+      if: failure() && steps.run_commands.outcome == 'failure'
       uses: andrewmusgrave/automatic-pull-request-review@0.0.5
       with:
         event: DISMISS
