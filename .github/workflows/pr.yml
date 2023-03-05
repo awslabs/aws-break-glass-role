@@ -1,0 +1,35 @@
+name: PR Scan
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - reopened
+    branches: ['main']
+jobs:
+  scan:
+    name: scan_pr
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Test and Build Package
+      id: test_package
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+    - name: run_commands
+      run: |
+        npm ci
+        npm run build
+        npm test
+    - name: OnFail
+      if: failure()
+      uses: andrewmusgrave/automatic-pull-request-review@0.0.5
+      with:
+        event: DISMISS
+        body: "Pull requests must build successfully and pass all current unit tests in order to be accepted. Please update and resubmit."
+
+
