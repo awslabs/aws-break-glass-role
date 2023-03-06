@@ -23,7 +23,10 @@
   "keywords": [
     "aws",
     "breakglassrole",
-    "cdk"
+    "cdk",
+    "security",
+    "IAM role",
+    "least privilege"
   ],
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
