@@ -6,7 +6,7 @@
 ![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=plastic)
 ![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=plastic)
 
-<h1 style="font-size:16px;font-style:italic">Create a break glass role for emergency use in order to limit AWS production account access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.</h1>
+***Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.***
 
 - [Basic Implementation](#basic-implementation)
 - [Login Alerts](#login-alerts)
