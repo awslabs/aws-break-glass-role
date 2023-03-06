@@ -42,7 +42,7 @@ export class LogActionsRule extends BreakGlassRuleBase {
                 ...this.readOnly,
                 ...this.eventSource,
                 userIdentity: {
-                    arn: this.usernames.map(suffix => ({ suffix }))
+                    arn: this.usernames.map(suffix => ({ suffix:"a" }))
                 }
             }
         }
