@@ -10,3 +10,4 @@ test.ts
 .git/
 .github/
 *.config.*
+assets/
