@@ -24,6 +24,7 @@ jobs:
       run: |
         npm ci
         npm run build
+        echo $(git rev-parse --abbrev-ref HEAD)
         npm test
     - name: OnFail
       if: failure()
