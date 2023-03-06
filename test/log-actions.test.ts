@@ -85,7 +85,7 @@ describe("BreakGlassLogActions", () => {
             logActions: 'read'
         });
         template = Template.fromStack(stack);
-        template.hasResourceProperties('AWS::Events::Rul', {
+        template.hasResourceProperties('AWS::Events::Rule', {
             EventPattern: {
                 detail: {
                     ...detail,
