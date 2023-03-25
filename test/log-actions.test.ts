@@ -5,8 +5,7 @@ import { testName, detail } from './variables';
 
 let app:App,
     stack:Stack,
-    template: Template,
-    con:LogActions
+    template: Template
 
 describe("BreakGlassLogActions", () => {
     beforeEach(() => {
@@ -14,7 +13,7 @@ describe("BreakGlassLogActions", () => {
         stack = new Stack(app, "TestStack");
     });
     it('Creates Default Login Alert Constructs', () => {
-        con = new LogActions(stack, testName, {
+        new LogActions(stack, testName, {
             usernames: ["myUser"]
         });
         template = Template.fromStack(stack);
@@ -80,7 +79,7 @@ describe("BreakGlassLogActions", () => {
     });
 
     it('Sets for Readonly', () => {
-        con = new LogActions(stack, testName, {
+        new LogActions(stack, testName, {
             usernames: ["myUser"],
             logActions: 'read'
         });
@@ -96,7 +95,7 @@ describe("BreakGlassLogActions", () => {
     });
 
     it('Sets for Write only', () => {
-        con = new LogActions(stack, testName, {
+        new LogActions(stack, testName, {
             usernames: ["myUser"],
             logActions: 'write'
         });
@@ -112,7 +111,7 @@ describe("BreakGlassLogActions", () => {
     });
 
     it('Sets Basic Pattern', () => {
-      con = new LogActions(stack, testName, {
+      new LogActions(stack, testName, {
         usernames: ["myUser"],
         logServices: ['cloudformation']
       });
@@ -128,7 +127,7 @@ describe("BreakGlassLogActions", () => {
   });
 
   it('Works with Pattern Filters', () => {
-    con = new LogActions(stack, testName, {
+    new LogActions(stack, testName, {
       usernames: ["myUser"],
       logServices: ['codepipeline', 'cloudformation']
     });
@@ -151,7 +150,7 @@ describe("BreakGlassLogActions", () => {
   });
 
   it('Converts Single Filters', () => {
-    con = new LogActions(stack, testName, {
+    new LogActions(stack, testName, {
       usernames: ["myUser"],
       logServices: ['codepipeline']
 

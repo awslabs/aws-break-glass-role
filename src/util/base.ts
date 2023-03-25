@@ -4,7 +4,6 @@ import { BreakGlassProps } from '../types';
 import * as Regions from './json/regions.json';
 import { IManagedPolicy, IUser } from 'aws-cdk-lib/aws-iam';
 export class BreakGlassBase extends Resource {
-  mainRegion: string;
   props: BreakGlassProps
   protected policyCount = 0;
   constructor(protected scope: Construct, protected id: string, props: BreakGlassProps) {

@@ -7,15 +7,15 @@ import { testName, detail, loginAlertRule } from './variables';
 
 let app:App,
     stack:Stack,
-    template: Template,
-    con:LoginAlert
+    template: Template
+    
 describe("BreakGlassLoginAlert", () => {
     beforeEach(() => {
         app = new App();
         stack = new Stack(app, "TestStack");
     });
     it('Creates Default Login Alert Constructs', () => {
-        con = new LoginAlert(stack, testName, {
+        new LoginAlert(stack, testName, {
             usernames: ["myUser"],
             loginAlertEmails: ["myEmail@me.com", "myEmail@example.com", "myEmail@mail.com"]
         });
@@ -84,7 +84,7 @@ describe("BreakGlassLoginAlert", () => {
 
     });
     it('Creates Login Alert Constructs in Multiple Regions', () => {
-        con = new LoginAlert(stack, testName, {
+        new LoginAlert(stack, testName, {
             usernames: ["myUser"],
             loginAlertEmails: ["myEmail@me.com"],
             region:'us-west-2',
@@ -100,7 +100,7 @@ describe("BreakGlassLoginAlert", () => {
         });
     });
     it('Bypasses main region if listed twice', () => {
-        con = new LoginAlert(stack, testName, {
+        new LoginAlert(stack, testName, {
             usernames: ["myUser"],
             loginAlertEmails: ["myEmail@me.com"],
             region:'us-west-2',
@@ -110,7 +110,7 @@ describe("BreakGlassLoginAlert", () => {
         template.resourceCountIs('AWS::Events::Rule', 3);
     });
     it('Matches for multiple Users', () => {
-        con = new LoginAlert(stack, testName, {
+        new LoginAlert(stack, testName, {
             usernames: ["myUser", "myOtherUser"],
             loginAlertEmails: ["myEmail@me.com"]
         });
@@ -132,7 +132,7 @@ describe("BreakGlassLoginAlert", () => {
         });
     });
     it('Matches for Assumed Roles', () => {
-        con = new LoginAlert(stack, testName, {
+        new LoginAlert(stack, testName, {
             usernames: ["myUser"],
             loginAlertEmails: ["myEmail@me.com"],
             role: new Role(stack, 'myRole', {
@@ -152,7 +152,7 @@ describe("BreakGlassLoginAlert", () => {
     });
     it('Transforms Message', () => {
         const msgSpy = jest.spyOn(SigninTargetInput, 'getTarget');
-        con = new LoginAlert(stack, testName, {
+        new LoginAlert(stack, testName, {
             usernames: ["myUser"],
             loginAlertEmails: ["myEmail@me.com"],
             role: new Role(stack, 'myRole', {
@@ -190,7 +190,7 @@ describe("BreakGlassLoginAlert", () => {
         });
     });
     it('Creates Log Group', () => {
-        con = new LoginAlert(stack, testName, {
+        new LoginAlert(stack, testName, {
             usernames: ["myUser"],
             loginAlertEmails: ["myEmail@me.com"],
             role: new Role(stack, 'myRole', {
@@ -250,7 +250,7 @@ describe("BreakGlassLoginAlert", () => {
     });
 
     it('Creates Only Log Group', () => {
-      con = new LoginAlert(stack, testName, {
+      new LoginAlert(stack, testName, {
           usernames: ["myUser"],
           createLoginLogGroup:true
       });

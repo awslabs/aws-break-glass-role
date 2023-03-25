@@ -17,8 +17,6 @@ export abstract class BreakGlassConstructBase extends BreakGlassBase {
   role?: IRole
   mainRegion: string;
 
-  props: BreakGlassProps
-
   protected ruleCount = 0;
   protected busCount = 0;
   constructor(protected scope: Construct, protected id: string, props: BreakGlassProps) {

@@ -1,4 +1,4 @@
-import { EventPattern, IRuleTarget, RuleTargetInput } from "aws-cdk-lib/aws-events";
+import { EventPattern, IRuleTarget } from "aws-cdk-lib/aws-events";
 import { BreakGlassLogGroup } from "../../util/log-group";
 import { Construct } from "constructs";
 import { EventPatternField } from "../../types";
@@ -29,7 +29,7 @@ export class LogActionsRule extends BreakGlassRuleBase {
         this.rule.addEventPattern(this.pattern);
     }
 
-    protected setTargets(message:RuleTargetInput): IRuleTarget | IRuleTarget[] {
+    protected setTargets(): IRuleTarget | IRuleTarget[] {
         return new BreakGlassLogGroup(this.scope,`${this.id}-log${this.targetCount}`,{
             retention: this.props.retentionDays,
             region: this.region

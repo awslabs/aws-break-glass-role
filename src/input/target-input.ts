@@ -36,7 +36,7 @@ export class BreakGlassTargetInput {
     }
 
     protected getMessageEvent(message?:string): TargetInput {
-        const event = {};
+        const event: EventInput = {};
         if (!message) return {event: this.rawEvent};
         let regex, $event = this.rawEvent;
         while (regex = /\<([^\>]*)\>/g.exec(message)) {

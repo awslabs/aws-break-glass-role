@@ -50,7 +50,7 @@ export abstract class BreakGlassRuleBase extends Resource {
     }
     
     protected abstract setPattern(): EventPattern
-    protected abstract setTargets(message?:RuleTargetInput) 
+    protected abstract setTargets(message?:RuleTargetInput): IRuleTarget | IRuleTarget[]
 
     get isMainRule():boolean {
         return this.region === this.props.mainRegion
@@ -89,7 +89,7 @@ export abstract class BreakGlassRuleBase extends Resource {
             this.targetCount++;
             this.addTarget(new TargetBus(this.eventBus,{role:this.props.busRole}));
         } else {
-            this.addTargets(this.setTargets(this.props.targetInput))
+            this.addTargets(this.setTargets(this.props.targetInput) as IRuleTarget[])
         }
     }
 }

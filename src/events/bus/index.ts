@@ -4,7 +4,7 @@ import { EventBusOptions } from "../../types";
 
 export class BreakGlassEventBus extends EventBus {
     
-    constructor(private scope: Construct, private id: string, props?:EventBusOptions) {
+    constructor(scope: Construct, id: string, props?:EventBusOptions) {
         super(scope,id, {
             eventBusName: props?.type === 'source' ? undefined : props?.value || id,
             eventSourceName: props?.type !== 'source' ? undefined : props?.value

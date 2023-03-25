@@ -1,4 +1,4 @@
-import { RemovalPolicy, ResourceProps } from "aws-cdk-lib"
+import { ResourceProps } from "aws-cdk-lib"
 import { EventBus } from "aws-cdk-lib/aws-events"
 import { IManagedPolicy, IRole, IUser, PolicyStatement } from "aws-cdk-lib/aws-iam"
 import { RetentionDays } from "aws-cdk-lib/aws-logs"
