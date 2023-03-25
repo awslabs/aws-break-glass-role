@@ -1,20 +1,9 @@
-import { Resource, ResourceProps, Stack } from "aws-cdk-lib";
+import { Resource, Stack } from "aws-cdk-lib";
 import { EventBus, EventPattern, IRuleTarget, Rule, RuleTargetInput } from "aws-cdk-lib/aws-events";
 import { EventBus as TargetBus } from 'aws-cdk-lib/aws-events-targets';
 import { IRole, IUser } from "aws-cdk-lib/aws-iam";
-import { RetentionDays } from "aws-cdk-lib/aws-logs";
 import { Construct } from "constructs";
-
-export interface BreakGlassRuleBaseProps extends ResourceProps{
-    usernames: (IRole | IUser | string)[]
-    eventBus:EventBus
-    busRole:IRole
-    mainRegion: string
-    targetInput?: RuleTargetInput
-    role?:IRole
-    region?: string
-    retentionDays?: RetentionDays
-}
+import { BreakGlassRuleBaseProps } from "../types";
 
 export abstract class BreakGlassRuleBase extends Resource {
     rule: Rule;
@@ -24,6 +13,7 @@ export abstract class BreakGlassRuleBase extends Resource {
     private $targets: IRuleTarget[] = [];
 
     protected targetCount = 1;
+    protected hasMessage:boolean = false;
 
     constructor(
         protected scope: Construct, 
@@ -41,7 +31,7 @@ export abstract class BreakGlassRuleBase extends Resource {
                 eventPattern: this.basePattern
             })
         }
-        this.$setTargets();
+        this.$createTargets();
         this.rule = new Rule(scope, `${id}-rule`, {
             ruleName: `${id}-rule-${this.region}`,
             targets:this.targets,
@@ -49,8 +39,8 @@ export abstract class BreakGlassRuleBase extends Resource {
         });
     }
     
-    protected abstract setPattern(): EventPattern
-    protected abstract setTargets(message?:RuleTargetInput): IRuleTarget | IRuleTarget[]
+    protected abstract createPattern(): EventPattern
+    protected abstract createTargets(message?:RuleTargetInput): IRuleTarget | IRuleTarget[]
 
     get isMainRule():boolean {
         return this.region === this.props.mainRegion
@@ -61,11 +51,11 @@ export abstract class BreakGlassRuleBase extends Resource {
     }
 
     get pattern(): EventPattern {
-        return this.setPattern();
+        return this.createPattern();
     }
 
     get basePattern(): EventPattern {
-        return this.setBasePattern();
+        return this.createBasePattern();
     }
 
     addTarget(target:IRuleTarget): this {
@@ -80,16 +70,16 @@ export abstract class BreakGlassRuleBase extends Resource {
         return this;
     }
 
-    protected setBasePattern(): EventPattern {
-        return this.setPattern();
+    protected createBasePattern(): EventPattern {
+        return this.createPattern();
     }
 
-    private $setTargets(): void {
+    private $createTargets(): void {
         if (!this.isMainRule) {
             this.targetCount++;
             this.addTarget(new TargetBus(this.eventBus,{role:this.props.busRole}));
         } else {
-            this.addTargets(this.setTargets(this.props.targetInput) as IRuleTarget[])
+            this.addTargets(this.createTargets(this.props.targetInput) as IRuleTarget[])
         }
     }
 }

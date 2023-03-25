@@ -3,7 +3,7 @@ import { Effect, IRole, PolicyDocument, PolicyStatement, Role, ServicePrincipal 
 import { ITopic } from 'aws-cdk-lib/aws-sns';
 import { Construct } from 'constructs';
 import { BreakGlassEventBus } from '../events/bus';
-import { EventBusOptions, BreakGlassProps } from '../types';
+import { IEventBusOptions, BreakGlassProps } from '../types';
 import { BreakGlassRuleBase } from './rule-base';
 import { BreakGlassBase } from './base';
 
@@ -22,8 +22,8 @@ export abstract class BreakGlassConstructBase extends BreakGlassBase {
   constructor(protected scope: Construct, protected id: string, props: BreakGlassProps) {
     super(scope, id, props);
     this.role = this.props.role;
-    this.eventBus = this.getEventBus();
-    this.targetBusRole = this.props.busRole || this.getTargetBusRole(this.eventBus);
+    this.eventBus = this.findEventBus();
+    this.targetBusRole = this.props.busRole || this.generateTargetBusRole(this.eventBus);
     this.mainRegion = this.props.region || 'us-east-1';
     const regions = this.props.regions || [];
     this.mainRule = this.addRule(this.mainRegion);
@@ -42,13 +42,13 @@ export abstract class BreakGlassConstructBase extends BreakGlassBase {
     return this.setRule(region, name);
   }
 
-  protected getEventBus(): EventBus {
+  protected findEventBus(): EventBus {
     this.busCount++;
     if (this.props.eventBus?.hasOwnProperty('eventBusArn')) return this.props.eventBus as EventBus;
-    return new BreakGlassEventBus(this.scope, `${this.id}-bus${this.busCount}`, this.props.eventBus as EventBusOptions); 
+    return new BreakGlassEventBus(this.scope, `${this.id}-bus${this.busCount}`, this.props.eventBus as IEventBusOptions); 
   }
 
-  protected getTargetBusRole(eventBus: EventBus):IRole {
+  protected generateTargetBusRole(eventBus: EventBus):IRole {
     return new Role(this.scope, `${this.id}-target-role${this.busCount}`, {
         assumedBy: new ServicePrincipal('events.amazonaws.com'),
         inlinePolicies: {

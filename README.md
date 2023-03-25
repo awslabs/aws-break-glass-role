@@ -221,7 +221,7 @@ To send login alerts from all regions, set `regions` to `['*']`. To reduce opera
 
 * **regions** *(optional)*: [string[]](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays)
 
-* **eventBus** *(optional)*: [EventBus](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.EventBus.html) | [EventBusOptions](lib/types.ts)
+* **eventBus** *(optional)*: [EventBus](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.EventBus.html) | [IEventBusOptions](src/types.ts)
 
 * **busRole** *(optional)*: [IRole](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.IRole.html) 
 

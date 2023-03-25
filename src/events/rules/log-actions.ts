@@ -1,46 +1,52 @@
-import { EventPattern, IRuleTarget } from "aws-cdk-lib/aws-events";
+import { EventPattern, IRuleTarget, RuleTargetInput } from "aws-cdk-lib/aws-events";
 import { BreakGlassLogGroup } from "../../util/log-group";
 import { Construct } from "constructs";
-import { EventPatternField } from "../../types";
-import { BreakGlassRuleBase, BreakGlassRuleBaseProps } from "../../util/rule-base";
+import { EventPatternField, LogActionsRuleProps } from "../../types";
+import { BreakGlassRuleBase } from "../../util/rule-base";
 
-export interface LogActionsRuleProps extends BreakGlassRuleBaseProps {
-    logActions?: 'read' | 'write' | boolean
-    logServices?: string[]
-}
 
 export class LogActionsRule extends BreakGlassRuleBase {
-    readOnly: {readOnly?: EventPatternField} = {}
-    eventSource: { eventSource?: EventPatternField } = {}
+    readOnly?: boolean
+    eventSource?: EventPatternField
     constructor(
         scope: Construct, 
         id: string,
         props:LogActionsRuleProps
     ) {
         super(scope, id, props);
-        if (props.logActions === 'read') this.readOnly = {readOnly:[true]};
-        else if (props.logActions === 'write') this.readOnly = {readOnly:[false]};
+        if (props.logActions === 'read') this.readOnly = true;
+        else if (props.logActions === 'write') this.readOnly = false;
         if (props.logServices?.length) {
-            this.eventSource = {
-                // TODO: Validate filter types
-                eventSource: props.logServices.map(service => ({ prefix: service.toLowerCase() }))
-            }
+            // TODO: Validate filter types
+            this.eventSource = props.logServices.map(service => ({ prefix: service.toLowerCase() }))
         }
         this.rule.addEventPattern(this.pattern);
     }
 
-    protected setTargets(): IRuleTarget | IRuleTarget[] {
+    protected createTargets(message?:RuleTargetInput): IRuleTarget | IRuleTarget[] {
+        this.hasMessage = !!message;
         return new BreakGlassLogGroup(this.scope,`${this.id}-log${this.targetCount}`,{
             retention: this.props.retentionDays,
             region: this.region
         })
     }
 
-    protected setPattern(): EventPattern {
+    protected createPattern(): EventPattern {
+        let es:any = this.eventSource;
+        // Again to please jsii
+        if (
+            es && 
+            !Array.isArray(es) && 
+            typeof es === 'object' && 
+            es.hasOwnProperty('anythingBut')
+        ) {
+            es['anything-but'] = es.anythingBut;
+            delete es.anythingBut;
+        }
         return {
             detail: {
-                ...this.readOnly,
-                ...this.eventSource,
+                readOnly: [this.readOnly],
+                eventSource: es,
                 userIdentity: {
                     arn: this.usernames.map(suffix => ({ suffix }))
                 }

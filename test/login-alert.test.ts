@@ -151,7 +151,7 @@ describe("BreakGlassLoginAlert", () => {
         });
     });
     it('Transforms Message', () => {
-        const msgSpy = jest.spyOn(SigninTargetInput, 'getTarget');
+        const msgSpy = jest.spyOn(SigninTargetInput, 'generateTargetInput');
         new LoginAlert(stack, testName, {
             usernames: ["myUser"],
             loginAlertEmails: ["myEmail@me.com"],

@@ -1,16 +1,30 @@
 export { BreakGlassRole } from './constructs/role';
-export { BreakGlassLoginAlert, BreakGlassLoginAlertProps } from './constructs/login-alert';
-export { BreakGlassLogActions, BreakGlassLogActionsProps } from './constructs/log-actions';
-export { BreakGlassDeployer, BreakGlassDeployerProps } from './constructs/deploy';
+export { BreakGlassLoginAlert } from './constructs/login-alert';
+export { BreakGlassLogActions } from './constructs/log-actions';
+export { BreakGlassDeployer } from './constructs/deploy';
+export { BreakGlassConstructBase } from './util/construct-base';
+export { BreakGlassRuleBase } from './util/rule-base';
+export { BreakGlassBase } from './util/base';
 export { BreakGlassTargetInput } from './input/target-input';
 export { SigninTargetInput } from './input/signin';
-export { BreakGlassLogGroup, BreakGlassLogProps } from './util/log-group';
+export { LoginAlertRule } from "./events/rules/login-alert";
+export { LogActionsRule } from "./events/rules/log-actions";
+export { BreakGlassLogGroup } from './util/log-group';
 export {
+    BreakGlassBaseProps,
+    BreakGlassProps,
     BreakGlassRoleProps,
-    EventBusOptions,
-    NumericMatchOperator,
-    EventPatternFieldFilter,
-    EventPatternItem,
+    BreakGlassRuleBaseProps,
+    BreakGlassLoginAlertProps,
+    BreakGlassDeployerProps,
+    BreakGlassLogActionsProps,
+    BreakGlassLogProps,
+    IEventBusOptions,
+    LoginAlertRuleProps,
+    LogActionsRuleProps,
+    EventInput,
     EventPatternField,
-    EventPatternFields
+    EventPatternFieldFilter,
+    TargetInput,
+    CidrRange
 } from './types';

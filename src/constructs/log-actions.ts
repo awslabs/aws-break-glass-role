@@ -1,19 +1,15 @@
 import { BreakGlassConstructBase } from "../util/construct-base";
-import { BreakGlassBaseProps } from "../types";
+import { BreakGlassLogActionsProps } from "../types";
 import { LogActionsRule } from "../events/rules/log-actions";
 import { Construct } from "constructs";
-
-export interface BreakGlassLogActionsProps extends BreakGlassBaseProps {
-    logActions?: 'read' | 'write' | boolean
-    logServices?: string[]
-}
+import { BreakGlassRuleBase } from "../util/rule-base";
 
 export class BreakGlassLogActions extends BreakGlassConstructBase {
 
     constructor(scope:Construct,id:string,props:BreakGlassLogActionsProps) {
         super(scope,id,props);
     }
-    protected setRule(region: string, name: string): LogActionsRule {
+    protected setRule(region: string, name: string): BreakGlassRuleBase {
 
         return new LogActionsRule(this.scope, name, {
             usernames: this.usernames,

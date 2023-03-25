@@ -1,0 +1,6533 @@
+{
+  "author": {
+    "email": "sguggenh@amazon.com",
+    "name": "Steven Guggenheimer",
+    "roles": [
+      "author"
+    ],
+    "url": "https://github.com/smguggen"
+  },
+  "contributors": [
+    {
+      "email": "ryansonshine@users.noreply.github.com",
+      "name": "Ryan Sonshine",
+      "roles": [
+        "contributor"
+      ],
+      "url": "https://github.com/ryansonshine"
+    }
+  ],
+  "dependencies": {
+    "aws-cdk-lib": "^2.55.1",
+    "constructs": "^10.0.0"
+  },
+  "dependencyClosure": {
+    "@aws-cdk/asset-awscli-v1": {
+      "targets": {
+        "dotnet": {
+          "namespace": "Amazon.CDK.Asset.AwsCliV1",
+          "packageId": "Amazon.CDK.Asset.AwsCliV1"
+        },
+        "go": {
+          "moduleName": "github.com/cdklabs/awscdk-asset-awscli-go",
+          "packageName": "awscliv1"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-asset-awscli-v1",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.cdk.asset.awscli.v1"
+        },
+        "js": {
+          "npm": "@aws-cdk/asset-awscli-v1"
+        },
+        "python": {
+          "distName": "aws-cdk.asset-awscli-v1",
+          "module": "aws_cdk.asset_awscli_v1"
+        }
+      }
+    },
+    "@aws-cdk/asset-kubectl-v20": {
+      "targets": {
+        "dotnet": {
+          "namespace": "Amazon.CDK.Asset.KubectlV20",
+          "packageId": "Amazon.CDK.Asset.KubectlV20"
+        },
+        "go": {
+          "moduleName": "github.com/cdklabs/awscdk-asset-kubectl-go",
+          "packageName": "kubectlv20"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-asset-kubectl-v20",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.cdk.asset.kubectl.v20"
+        },
+        "js": {
+          "npm": "@aws-cdk/asset-kubectl-v20"
+        },
+        "python": {
+          "distName": "aws-cdk.asset-kubectl-v20",
+          "module": "aws_cdk.asset_kubectl_v20"
+        }
+      }
+    },
+    "@aws-cdk/asset-node-proxy-agent-v5": {
+      "targets": {
+        "dotnet": {
+          "namespace": "Amazon.CDK.Asset.NodeProxyAgentV5",
+          "packageId": "Amazon.CDK.Asset.NodeProxyAgentV5"
+        },
+        "go": {
+          "moduleName": "github.com/cdklabs/awscdk-asset-node-proxy-agent-go",
+          "packageName": "nodeproxyagentv5"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "cdk-asset-node-proxy-agent-v5",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk.cdk.asset.node.proxy.agent.v5"
+        },
+        "js": {
+          "npm": "@aws-cdk/asset-node-proxy-agent-v5"
+        },
+        "python": {
+          "distName": "aws-cdk.asset-node-proxy-agent-v5",
+          "module": "aws_cdk.asset_node_proxy_agent_v5"
+        }
+      }
+    },
+    "aws-cdk-lib": {
+      "submodules": {
+        "aws-cdk-lib.alexa_ask": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.Alexa.Ask"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.alexa.ask"
+            },
+            "python": {
+              "module": "aws_cdk.alexa_ask"
+            }
+          }
+        },
+        "aws-cdk-lib.assertions": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.Assertions"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.assertions"
+            },
+            "python": {
+              "module": "aws_cdk.assertions"
+            }
+          }
+        },
+        "aws-cdk-lib.assets": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.Assets"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.assets"
+            },
+            "python": {
+              "module": "aws_cdk.assets"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_accessanalyzer": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AccessAnalyzer"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.accessanalyzer"
+            },
+            "python": {
+              "module": "aws_cdk.aws_accessanalyzer"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_acmpca": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ACMPCA"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.acmpca"
+            },
+            "python": {
+              "module": "aws_cdk.aws_acmpca"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_amazonmq": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AmazonMQ"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.amazonmq"
+            },
+            "python": {
+              "module": "aws_cdk.aws_amazonmq"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_amplify": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Amplify"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.amplify"
+            },
+            "python": {
+              "module": "aws_cdk.aws_amplify"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_amplifyuibuilder": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AmplifyUIBuilder"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.amplifyuibuilder"
+            },
+            "python": {
+              "module": "aws_cdk.aws_amplifyuibuilder"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_apigateway": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.APIGateway"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.apigateway"
+            },
+            "python": {
+              "module": "aws_cdk.aws_apigateway"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_apigatewayv2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Apigatewayv2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.apigatewayv2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_apigatewayv2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_appconfig": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AppConfig"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.appconfig"
+            },
+            "python": {
+              "module": "aws_cdk.aws_appconfig"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_appflow": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AppFlow"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.appflow"
+            },
+            "python": {
+              "module": "aws_cdk.aws_appflow"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_appintegrations": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AppIntegrations"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.appintegrations"
+            },
+            "python": {
+              "module": "aws_cdk.aws_appintegrations"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_applicationautoscaling": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ApplicationAutoScaling"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.applicationautoscaling"
+            },
+            "python": {
+              "module": "aws_cdk.aws_applicationautoscaling"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_applicationinsights": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ApplicationInsights"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.applicationinsights"
+            },
+            "python": {
+              "module": "aws_cdk.aws_applicationinsights"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_appmesh": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AppMesh"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.appmesh"
+            },
+            "python": {
+              "module": "aws_cdk.aws_appmesh"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_apprunner": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AppRunner"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.apprunner"
+            },
+            "python": {
+              "module": "aws_cdk.aws_apprunner"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_appstream": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AppStream"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.appstream"
+            },
+            "python": {
+              "module": "aws_cdk.aws_appstream"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_appsync": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AppSync"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.appsync"
+            },
+            "python": {
+              "module": "aws_cdk.aws_appsync"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_aps": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.APS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.aps"
+            },
+            "python": {
+              "module": "aws_cdk.aws_aps"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_athena": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Athena"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.athena"
+            },
+            "python": {
+              "module": "aws_cdk.aws_athena"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_auditmanager": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AuditManager"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.auditmanager"
+            },
+            "python": {
+              "module": "aws_cdk.aws_auditmanager"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_autoscaling": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AutoScaling"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.autoscaling"
+            },
+            "python": {
+              "module": "aws_cdk.aws_autoscaling"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_autoscaling_common": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AutoScaling.Common"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.autoscaling.common"
+            },
+            "python": {
+              "module": "aws_cdk.aws_autoscaling_common"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_autoscaling_hooktargets": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AutoScaling.HookTargets"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.autoscaling.hooktargets"
+            },
+            "python": {
+              "module": "aws_cdk.aws_autoscaling_hooktargets"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_autoscalingplans": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.AutoScalingPlans"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.autoscalingplans"
+            },
+            "python": {
+              "module": "aws_cdk.aws_autoscalingplans"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_backup": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Backup"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.backup"
+            },
+            "python": {
+              "module": "aws_cdk.aws_backup"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_batch": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Batch"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.batch"
+            },
+            "python": {
+              "module": "aws_cdk.aws_batch"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_billingconductor": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.BillingConductor"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.billingconductor"
+            },
+            "python": {
+              "module": "aws_cdk.aws_billingconductor"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_budgets": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Budgets"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.budgets"
+            },
+            "python": {
+              "module": "aws_cdk.aws_budgets"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cassandra": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Cassandra"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cassandra"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cassandra"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ce": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CE"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ce"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ce"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_certificatemanager": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CertificateManager"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.certificatemanager"
+            },
+            "python": {
+              "module": "aws_cdk.aws_certificatemanager"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_chatbot": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Chatbot"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.chatbot"
+            },
+            "python": {
+              "module": "aws_cdk.aws_chatbot"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cloud9": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Cloud9"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cloud9"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cloud9"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cloudformation": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CloudFormation"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cloudformation"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cloudformation"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cloudfront": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CloudFront"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cloudfront"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cloudfront"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cloudfront.experimental": {},
+        "aws-cdk-lib.aws_cloudfront_origins": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CloudFront.Origins"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cloudfront.origins"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cloudfront_origins"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cloudtrail": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CloudTrail"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cloudtrail"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cloudtrail"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cloudwatch": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CloudWatch"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cloudwatch"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cloudwatch"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cloudwatch_actions": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CloudWatch.Actions"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cloudwatch.actions"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cloudwatch_actions"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codeartifact": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodeArtifact"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codeartifact"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codeartifact"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codebuild": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodeBuild"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codebuild"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codebuild"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codecommit": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodeCommit"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codecommit"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codecommit"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codedeploy": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodeDeploy"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codedeploy"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codedeploy"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codeguruprofiler": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodeGuruProfiler"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codeguruprofiler"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codeguruprofiler"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codegurureviewer": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodeGuruReviewer"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codegurureviewer"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codegurureviewer"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codepipeline": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodePipeline"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codepipeline"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codepipeline"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codepipeline_actions": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodePipeline.Actions"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codepipeline.actions"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codepipeline_actions"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codestar": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Codestar"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codestar"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codestar"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codestarconnections": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodeStarConnections"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codestarconnections"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codestarconnections"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_codestarnotifications": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CodeStarNotifications"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.codestarnotifications"
+            },
+            "python": {
+              "module": "aws_cdk.aws_codestarnotifications"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cognito": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Cognito"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cognito"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cognito"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_config": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Config"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.config"
+            },
+            "python": {
+              "module": "aws_cdk.aws_config"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_connect": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Connect"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.connect"
+            },
+            "python": {
+              "module": "aws_cdk.aws_connect"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_connectcampaigns": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ConnectCampaigns"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.connectcampaigns"
+            },
+            "python": {
+              "module": "aws_cdk.aws_connectcampaigns"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_controltower": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ControlTower"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.controltower"
+            },
+            "python": {
+              "module": "aws_cdk.aws_controltower"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_cur": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CUR"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.cur"
+            },
+            "python": {
+              "module": "aws_cdk.aws_cur"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_customerprofiles": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.CustomerProfiles"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.customerprofiles"
+            },
+            "python": {
+              "module": "aws_cdk.aws_customerprofiles"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_databrew": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DataBrew"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.databrew"
+            },
+            "python": {
+              "module": "aws_cdk.aws_databrew"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_datapipeline": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DataPipeline"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.datapipeline"
+            },
+            "python": {
+              "module": "aws_cdk.aws_datapipeline"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_datasync": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DataSync"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.datasync"
+            },
+            "python": {
+              "module": "aws_cdk.aws_datasync"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_dax": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DAX"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.dax"
+            },
+            "python": {
+              "module": "aws_cdk.aws_dax"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_detective": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Detective"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.detective"
+            },
+            "python": {
+              "module": "aws_cdk.aws_detective"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_devopsguru": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DevOpsGuru"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.devopsguru"
+            },
+            "python": {
+              "module": "aws_cdk.aws_devopsguru"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_directoryservice": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DirectoryService"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.directoryservice"
+            },
+            "python": {
+              "module": "aws_cdk.aws_directoryservice"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_dlm": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DLM"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.dlm"
+            },
+            "python": {
+              "module": "aws_cdk.aws_dlm"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_dms": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DMS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.dms"
+            },
+            "python": {
+              "module": "aws_cdk.aws_dms"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_docdb": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DocDB"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.docdb"
+            },
+            "python": {
+              "module": "aws_cdk.aws_docdb"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_docdbelastic": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DocDBElastic"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.docdbelastic"
+            },
+            "python": {
+              "module": "aws_cdk.aws_docdbelastic"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_dynamodb": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.DynamoDB"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.dynamodb"
+            },
+            "python": {
+              "module": "aws_cdk.aws_dynamodb"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ec2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.EC2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ec2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ec2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ecr": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ECR"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ecr"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ecr"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ecr_assets": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Ecr.Assets"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ecr.assets"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ecr_assets"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ecs": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ECS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ecs"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ecs"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ecs_patterns": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ECS.Patterns"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ecs.patterns"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ecs_patterns"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_efs": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.EFS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.efs"
+            },
+            "python": {
+              "module": "aws_cdk.aws_efs"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_eks": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.EKS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.eks"
+            },
+            "python": {
+              "module": "aws_cdk.aws_eks"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_elasticache": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ElastiCache"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.elasticache"
+            },
+            "python": {
+              "module": "aws_cdk.aws_elasticache"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_elasticbeanstalk": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ElasticBeanstalk"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.elasticbeanstalk"
+            },
+            "python": {
+              "module": "aws_cdk.aws_elasticbeanstalk"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_elasticloadbalancing": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ElasticLoadBalancing"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.elasticloadbalancing"
+            },
+            "python": {
+              "module": "aws_cdk.aws_elasticloadbalancing"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_elasticloadbalancingv2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ElasticLoadBalancingV2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.elasticloadbalancingv2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_elasticloadbalancingv2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_elasticloadbalancingv2_actions": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ElasticLoadBalancingV2.Actions"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.elasticloadbalancingv2.actions"
+            },
+            "python": {
+              "module": "aws_cdk.aws_elasticloadbalancingv2_actions"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_elasticloadbalancingv2_targets": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ElasticLoadBalancingV2.Targets"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.elasticloadbalancingv2.targets"
+            },
+            "python": {
+              "module": "aws_cdk.aws_elasticloadbalancingv2_targets"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_elasticsearch": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Elasticsearch"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.elasticsearch"
+            },
+            "python": {
+              "module": "aws_cdk.aws_elasticsearch"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_emr": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.EMR"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.emr"
+            },
+            "python": {
+              "module": "aws_cdk.aws_emr"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_emrcontainers": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.EMRContainers"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.emrcontainers"
+            },
+            "python": {
+              "module": "aws_cdk.aws_emrcontainers"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_emrserverless": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.EMRServerless"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.emrserverless"
+            },
+            "python": {
+              "module": "aws_cdk.aws_emrserverless"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_events": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Events"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.events"
+            },
+            "python": {
+              "module": "aws_cdk.aws_events"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_events_targets": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Events.Targets"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.events.targets"
+            },
+            "python": {
+              "module": "aws_cdk.aws_events_targets"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_eventschemas": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.EventSchemas"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.eventschemas"
+            },
+            "python": {
+              "module": "aws_cdk.aws_eventschemas"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_evidently": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Evidently"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.evidently"
+            },
+            "python": {
+              "module": "aws_cdk.aws_evidently"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_finspace": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.FinSpace"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.finspace"
+            },
+            "python": {
+              "module": "aws_cdk.aws_finspace"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_fis": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.FIS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.fis"
+            },
+            "python": {
+              "module": "aws_cdk.aws_fis"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_fms": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.FMS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.fms"
+            },
+            "python": {
+              "module": "aws_cdk.aws_fms"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_forecast": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Forecast"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.forecast"
+            },
+            "python": {
+              "module": "aws_cdk.aws_forecast"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_frauddetector": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.FraudDetector"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.frauddetector"
+            },
+            "python": {
+              "module": "aws_cdk.aws_frauddetector"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_fsx": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.FSx"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.fsx"
+            },
+            "python": {
+              "module": "aws_cdk.aws_fsx"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_gamelift": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.GameLift"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.gamelift"
+            },
+            "python": {
+              "module": "aws_cdk.aws_gamelift"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_globalaccelerator": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.GlobalAccelerator"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.globalaccelerator"
+            },
+            "python": {
+              "module": "aws_cdk.aws_globalaccelerator"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_globalaccelerator_endpoints": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.GlobalAccelerator.Endpoints"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.globalaccelerator.endpoints"
+            },
+            "python": {
+              "module": "aws_cdk.aws_globalaccelerator_endpoints"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_glue": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Glue"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.glue"
+            },
+            "python": {
+              "module": "aws_cdk.aws_glue"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_grafana": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Grafana"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.grafana"
+            },
+            "python": {
+              "module": "aws_cdk.aws_grafana"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_greengrass": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Greengrass"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.greengrass"
+            },
+            "python": {
+              "module": "aws_cdk.aws_greengrass"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_greengrassv2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.GreengrassV2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.greengrassv2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_greengrassv2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_groundstation": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.GroundStation"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.groundstation"
+            },
+            "python": {
+              "module": "aws_cdk.aws_groundstation"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_guardduty": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.GuardDuty"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.guardduty"
+            },
+            "python": {
+              "module": "aws_cdk.aws_guardduty"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_healthlake": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.HealthLake"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.healthlake"
+            },
+            "python": {
+              "module": "aws_cdk.aws_healthlake"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iam": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IAM"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iam"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iam"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_identitystore": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IdentityStore"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.identitystore"
+            },
+            "python": {
+              "module": "aws_cdk.aws_identitystore"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_imagebuilder": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ImageBuilder"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.imagebuilder"
+            },
+            "python": {
+              "module": "aws_cdk.aws_imagebuilder"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_inspector": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Inspector"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.inspector"
+            },
+            "python": {
+              "module": "aws_cdk.aws_inspector"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_inspectorv2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.InspectorV2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.inspectorv2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_inspectorv2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iot": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoT"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iot"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iot"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iot1click": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoT1Click"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iot1click"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iot1click"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iotanalytics": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTAnalytics"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iotanalytics"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iotanalytics"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iotcoredeviceadvisor": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTCoreDeviceAdvisor"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iotcoredeviceadvisor"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iotcoredeviceadvisor"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iotevents": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTEvents"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iotevents"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iotevents"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iotfleethub": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTFleetHub"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iotfleethub"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iotfleethub"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iotfleetwise": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTFleetWise"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iotfleetwise"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iotfleetwise"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iotsitewise": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTSiteWise"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iotsitewise"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iotsitewise"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iotthingsgraph": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTThingsGraph"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iotthingsgraph"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iotthingsgraph"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iottwinmaker": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTTwinMaker"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iottwinmaker"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iottwinmaker"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_iotwireless": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.IoTWireless"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.iotwireless"
+            },
+            "python": {
+              "module": "aws_cdk.aws_iotwireless"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ivs": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Ivs"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ivs"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ivs"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_kafkaconnect": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.KafkaConnect"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.kafkaconnect"
+            },
+            "python": {
+              "module": "aws_cdk.aws_kafkaconnect"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_kendra": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Kendra"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.kendra"
+            },
+            "python": {
+              "module": "aws_cdk.aws_kendra"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_kinesis": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Kinesis"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.kinesis"
+            },
+            "python": {
+              "module": "aws_cdk.aws_kinesis"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_kinesisanalytics": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.KinesisAnalytics"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.kinesisanalytics"
+            },
+            "python": {
+              "module": "aws_cdk.aws_kinesisanalytics"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_kinesisanalyticsv2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.KinesisAnalyticsV2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.kinesisanalyticsv2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_kinesisanalyticsv2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_kinesisfirehose": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.KinesisFirehose"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.kinesisfirehose"
+            },
+            "python": {
+              "module": "aws_cdk.aws_kinesisfirehose"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_kinesisvideo": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.KinesisVideo"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.kinesisvideo"
+            },
+            "python": {
+              "module": "aws_cdk.aws_kinesisvideo"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_kms": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.KMS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.kms"
+            },
+            "python": {
+              "module": "aws_cdk.aws_kms"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lakeformation": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.LakeFormation"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lakeformation"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lakeformation"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lambda": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Lambda"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lambda"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lambda"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lambda_destinations": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Lambda.Destinations"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lambda.destinations"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lambda_destinations"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lambda_event_sources": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Lambda.EventSources"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lambda.eventsources"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lambda_event_sources"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lambda_nodejs": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Lambda.Nodejs"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lambda.nodejs"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lambda_nodejs"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lex": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Lex"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lex"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lex"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_licensemanager": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.LicenseManager"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.licensemanager"
+            },
+            "python": {
+              "module": "aws_cdk.aws_licensemanager"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lightsail": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Lightsail"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lightsail"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lightsail"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_location": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Location"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.location"
+            },
+            "python": {
+              "module": "aws_cdk.aws_location"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_logs": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Logs"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.logs"
+            },
+            "python": {
+              "module": "aws_cdk.aws_logs"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_logs_destinations": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Logs.Destinations"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.logs.destinations"
+            },
+            "python": {
+              "module": "aws_cdk.aws_logs_destinations"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lookoutequipment": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.LookoutEquipment"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lookoutequipment"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lookoutequipment"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lookoutmetrics": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.LookoutMetrics"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lookoutmetrics"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lookoutmetrics"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_lookoutvision": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.LookoutVision"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.lookoutvision"
+            },
+            "python": {
+              "module": "aws_cdk.aws_lookoutvision"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_m2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.M2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.m2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_m2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_macie": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Macie"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.macie"
+            },
+            "python": {
+              "module": "aws_cdk.aws_macie"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_managedblockchain": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ManagedBlockchain"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.managedblockchain"
+            },
+            "python": {
+              "module": "aws_cdk.aws_managedblockchain"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_mediaconnect": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MediaConnect"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.mediaconnect"
+            },
+            "python": {
+              "module": "aws_cdk.aws_mediaconnect"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_mediaconvert": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MediaConvert"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.mediaconvert"
+            },
+            "python": {
+              "module": "aws_cdk.aws_mediaconvert"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_medialive": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MediaLive"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.medialive"
+            },
+            "python": {
+              "module": "aws_cdk.aws_medialive"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_mediapackage": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MediaPackage"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.mediapackage"
+            },
+            "python": {
+              "module": "aws_cdk.aws_mediapackage"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_mediastore": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MediaStore"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.mediastore"
+            },
+            "python": {
+              "module": "aws_cdk.aws_mediastore"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_mediatailor": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MediaTailor"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.mediatailor"
+            },
+            "python": {
+              "module": "aws_cdk.aws_mediatailor"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_memorydb": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MemoryDB"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.memorydb"
+            },
+            "python": {
+              "module": "aws_cdk.aws_memorydb"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_msk": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MSK"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.msk"
+            },
+            "python": {
+              "module": "aws_cdk.aws_msk"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_mwaa": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.MWAA"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.mwaa"
+            },
+            "python": {
+              "module": "aws_cdk.aws_mwaa"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_neptune": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Neptune"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.neptune"
+            },
+            "python": {
+              "module": "aws_cdk.aws_neptune"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_networkfirewall": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.NetworkFirewall"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.networkfirewall"
+            },
+            "python": {
+              "module": "aws_cdk.aws_networkfirewall"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_networkmanager": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.NetworkManager"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.networkmanager"
+            },
+            "python": {
+              "module": "aws_cdk.aws_networkmanager"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_nimblestudio": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.NimbleStudio"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.nimblestudio"
+            },
+            "python": {
+              "module": "aws_cdk.aws_nimblestudio"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_oam": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Oam"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.oam"
+            },
+            "python": {
+              "module": "aws_cdk.aws_oam"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_opensearchserverless": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.OpenSearchServerless"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.opensearchserverless"
+            },
+            "python": {
+              "module": "aws_cdk.aws_opensearchserverless"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_opensearchservice": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.OpenSearchService"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.opensearchservice"
+            },
+            "python": {
+              "module": "aws_cdk.aws_opensearchservice"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_opsworks": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.OpsWorks"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.opsworks"
+            },
+            "python": {
+              "module": "aws_cdk.aws_opsworks"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_opsworkscm": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.OpsWorksCM"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.opsworkscm"
+            },
+            "python": {
+              "module": "aws_cdk.aws_opsworkscm"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_organizations": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Organizations"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.organizations"
+            },
+            "python": {
+              "module": "aws_cdk.aws_organizations"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_panorama": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Panorama"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.panorama"
+            },
+            "python": {
+              "module": "aws_cdk.aws_panorama"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_personalize": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Personalize"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.personalize"
+            },
+            "python": {
+              "module": "aws_cdk.aws_personalize"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_pinpoint": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Pinpoint"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.pinpoint"
+            },
+            "python": {
+              "module": "aws_cdk.aws_pinpoint"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_pinpointemail": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.PinpointEmail"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.pinpointemail"
+            },
+            "python": {
+              "module": "aws_cdk.aws_pinpointemail"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_pipes": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Pipes"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.pipes"
+            },
+            "python": {
+              "module": "aws_cdk.aws_pipes"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_qldb": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.QLDB"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.qldb"
+            },
+            "python": {
+              "module": "aws_cdk.aws_qldb"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_quicksight": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.QuickSight"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.quicksight"
+            },
+            "python": {
+              "module": "aws_cdk.aws_quicksight"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ram": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.RAM"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ram"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ram"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_rds": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.RDS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.rds"
+            },
+            "python": {
+              "module": "aws_cdk.aws_rds"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_redshift": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Redshift"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.redshift"
+            },
+            "python": {
+              "module": "aws_cdk.aws_redshift"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_redshiftserverless": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.RedshiftServerless"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.redshiftserverless"
+            },
+            "python": {
+              "module": "aws_cdk.aws_redshiftserverless"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_refactorspaces": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.RefactorSpaces"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.refactorspaces"
+            },
+            "python": {
+              "module": "aws_cdk.aws_refactorspaces"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_rekognition": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Rekognition"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.rekognition"
+            },
+            "python": {
+              "module": "aws_cdk.aws_rekognition"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_resiliencehub": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ResilienceHub"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.resiliencehub"
+            },
+            "python": {
+              "module": "aws_cdk.aws_resiliencehub"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_resourceexplorer2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ResourceExplorer2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.resourceexplorer2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_resourceexplorer2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_resourcegroups": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ResourceGroups"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.resourcegroups"
+            },
+            "python": {
+              "module": "aws_cdk.aws_resourcegroups"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_robomaker": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.RoboMaker"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.robomaker"
+            },
+            "python": {
+              "module": "aws_cdk.aws_robomaker"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_rolesanywhere": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.RolesAnywhere"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.rolesanywhere"
+            },
+            "python": {
+              "module": "aws_cdk.aws_rolesanywhere"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_route53": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Route53"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.route53"
+            },
+            "python": {
+              "module": "aws_cdk.aws_route53"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_route53_patterns": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Route53.Patterns"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.route53.patterns"
+            },
+            "python": {
+              "module": "aws_cdk.aws_route53_patterns"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_route53_targets": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Route53.Targets"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.route53.targets"
+            },
+            "python": {
+              "module": "aws_cdk.aws_route53_targets"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_route53recoverycontrol": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Route53RecoveryControl"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.route53recoverycontrol"
+            },
+            "python": {
+              "module": "aws_cdk.aws_route53recoverycontrol"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_route53recoveryreadiness": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Route53RecoveryReadiness"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.route53recoveryreadiness"
+            },
+            "python": {
+              "module": "aws_cdk.aws_route53recoveryreadiness"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_route53resolver": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Route53Resolver"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.route53resolver"
+            },
+            "python": {
+              "module": "aws_cdk.aws_route53resolver"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_rum": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.RUM"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.rum"
+            },
+            "python": {
+              "module": "aws_cdk.aws_rum"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_s3": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.S3"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.s3"
+            },
+            "python": {
+              "module": "aws_cdk.aws_s3"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_s3_assets": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.S3.Assets"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.s3.assets"
+            },
+            "python": {
+              "module": "aws_cdk.aws_s3_assets"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_s3_deployment": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.S3.Deployment"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.s3.deployment"
+            },
+            "python": {
+              "module": "aws_cdk.aws_s3_deployment"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_s3_notifications": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.S3.Notifications"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.s3.notifications"
+            },
+            "python": {
+              "module": "aws_cdk.aws_s3_notifications"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_s3objectlambda": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.S3ObjectLambda"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.s3objectlambda"
+            },
+            "python": {
+              "module": "aws_cdk.aws_s3objectlambda"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_s3outposts": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.S3Outposts"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.s3outposts"
+            },
+            "python": {
+              "module": "aws_cdk.aws_s3outposts"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_sagemaker": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Sagemaker"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.sagemaker"
+            },
+            "python": {
+              "module": "aws_cdk.aws_sagemaker"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_sam": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SAM"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.sam"
+            },
+            "python": {
+              "module": "aws_cdk.aws_sam"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_scheduler": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Scheduler"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.scheduler"
+            },
+            "python": {
+              "module": "aws_cdk.aws_scheduler"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_sdb": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SDB"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.sdb"
+            },
+            "python": {
+              "module": "aws_cdk.aws_sdb"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_secretsmanager": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SecretsManager"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.secretsmanager"
+            },
+            "python": {
+              "module": "aws_cdk.aws_secretsmanager"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_securityhub": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SecurityHub"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.securityhub"
+            },
+            "python": {
+              "module": "aws_cdk.aws_securityhub"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_servicecatalog": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Servicecatalog"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.servicecatalog"
+            },
+            "python": {
+              "module": "aws_cdk.aws_servicecatalog"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_servicecatalogappregistry": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Servicecatalogappregistry"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.servicecatalogappregistry"
+            },
+            "python": {
+              "module": "aws_cdk.aws_servicecatalogappregistry"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_servicediscovery": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.ServiceDiscovery"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.servicediscovery"
+            },
+            "python": {
+              "module": "aws_cdk.aws_servicediscovery"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ses": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SES"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ses"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ses"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ses_actions": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SES.Actions"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ses.actions"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ses_actions"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_signer": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Signer"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.signer"
+            },
+            "python": {
+              "module": "aws_cdk.aws_signer"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_sns": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SNS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.sns"
+            },
+            "python": {
+              "module": "aws_cdk.aws_sns"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_sns_subscriptions": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SNS.Subscriptions"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.sns.subscriptions"
+            },
+            "python": {
+              "module": "aws_cdk.aws_sns_subscriptions"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_sqs": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SQS"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.sqs"
+            },
+            "python": {
+              "module": "aws_cdk.aws_sqs"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ssm": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SSM"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ssm"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ssm"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ssmcontacts": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SSMContacts"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ssmcontacts"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ssmcontacts"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_ssmincidents": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SSMIncidents"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.ssmincidents"
+            },
+            "python": {
+              "module": "aws_cdk.aws_ssmincidents"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_sso": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SSO"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.sso"
+            },
+            "python": {
+              "module": "aws_cdk.aws_sso"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_stepfunctions": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.StepFunctions"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.stepfunctions"
+            },
+            "python": {
+              "module": "aws_cdk.aws_stepfunctions"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_stepfunctions_tasks": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.StepFunctions.Tasks"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.stepfunctions.tasks"
+            },
+            "python": {
+              "module": "aws_cdk.aws_stepfunctions_tasks"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_supportapp": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.SupportApp"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.supportapp"
+            },
+            "python": {
+              "module": "aws_cdk.aws_supportapp"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_synthetics": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Synthetics"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.synthetics"
+            },
+            "python": {
+              "module": "aws_cdk.aws_synthetics"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_timestream": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Timestream"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.timestream"
+            },
+            "python": {
+              "module": "aws_cdk.aws_timestream"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_transfer": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Transfer"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.transfer"
+            },
+            "python": {
+              "module": "aws_cdk.aws_transfer"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_voiceid": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.VoiceID"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.voiceid"
+            },
+            "python": {
+              "module": "aws_cdk.aws_voiceid"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_waf": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.WAF"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.waf"
+            },
+            "python": {
+              "module": "aws_cdk.aws_waf"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_wafregional": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.WAFRegional"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.waf.regional"
+            },
+            "python": {
+              "module": "aws_cdk.aws_wafregional"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_wafv2": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.WAFv2"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.wafv2"
+            },
+            "python": {
+              "module": "aws_cdk.aws_wafv2"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_wisdom": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.Wisdom"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.wisdom"
+            },
+            "python": {
+              "module": "aws_cdk.aws_wisdom"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_workspaces": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.WorkSpaces"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.workspaces"
+            },
+            "python": {
+              "module": "aws_cdk.aws_workspaces"
+            }
+          }
+        },
+        "aws-cdk-lib.aws_xray": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.AWS.XRay"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.services.xray"
+            },
+            "python": {
+              "module": "aws_cdk.aws_xray"
+            }
+          }
+        },
+        "aws-cdk-lib.cloud_assembly_schema": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.CloudAssembly.Schema"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.cloudassembly.schema"
+            },
+            "python": {
+              "module": "aws_cdk.cloud_assembly_schema"
+            }
+          }
+        },
+        "aws-cdk-lib.cloudformation_include": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.CloudFormation.Include"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.cloudformation.include"
+            },
+            "python": {
+              "module": "aws_cdk.cloudformation_include"
+            }
+          }
+        },
+        "aws-cdk-lib.custom_resources": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.CustomResources"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.customresources"
+            },
+            "python": {
+              "module": "aws_cdk.custom_resources"
+            }
+          }
+        },
+        "aws-cdk-lib.cx_api": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.CXAPI"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.cxapi"
+            },
+            "python": {
+              "module": "aws_cdk.cx_api"
+            }
+          }
+        },
+        "aws-cdk-lib.lambda_layer_awscli": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.LambdaLayer.AwsCli"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.lambdalayer.awscli"
+            },
+            "python": {
+              "module": "aws_cdk.lambda_layer_awscli"
+            }
+          }
+        },
+        "aws-cdk-lib.lambda_layer_kubectl": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.LambdaLayer.Kubectl"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.lambdalayer.kubectl"
+            },
+            "python": {
+              "module": "aws_cdk.lambda_layer_kubectl"
+            }
+          }
+        },
+        "aws-cdk-lib.lambda_layer_node_proxy_agent": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.LambdaLayer.NodeProxyAgent"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.lambda.layer.node.proxy.agent"
+            },
+            "python": {
+              "module": "aws_cdk.lambda_layer_node_proxy_agent"
+            }
+          }
+        },
+        "aws-cdk-lib.pipelines": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.Pipelines"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.pipelines"
+            },
+            "python": {
+              "module": "aws_cdk.pipelines"
+            }
+          }
+        },
+        "aws-cdk-lib.region_info": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.RegionInfo"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.regioninfo"
+            },
+            "python": {
+              "module": "aws_cdk.region_info"
+            }
+          }
+        },
+        "aws-cdk-lib.triggers": {
+          "targets": {
+            "dotnet": {
+              "namespace": "Amazon.CDK.Triggers"
+            },
+            "java": {
+              "package": "software.amazon.awscdk.triggers"
+            },
+            "python": {
+              "module": "aws_cdk.triggers"
+            }
+          }
+        }
+      },
+      "targets": {
+        "dotnet": {
+          "iconUrl": "https://raw.githubusercontent.com/aws/aws-cdk/main/logo/default-256-dark.png",
+          "namespace": "Amazon.CDK",
+          "packageId": "Amazon.CDK.Lib"
+        },
+        "go": {
+          "moduleName": "github.com/aws/aws-cdk-go",
+          "packageName": "awscdk"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "aws-cdk-lib",
+            "groupId": "software.amazon.awscdk"
+          },
+          "package": "software.amazon.awscdk"
+        },
+        "js": {
+          "npm": "aws-cdk-lib"
+        },
+        "python": {
+          "distName": "aws-cdk-lib",
+          "module": "aws_cdk"
+        }
+      }
+    },
+    "constructs": {
+      "targets": {
+        "dotnet": {
+          "namespace": "Constructs",
+          "packageId": "Constructs"
+        },
+        "go": {
+          "moduleName": "github.com/aws/constructs-go"
+        },
+        "java": {
+          "maven": {
+            "artifactId": "constructs",
+            "groupId": "software.constructs"
+          },
+          "package": "software.constructs"
+        },
+        "js": {
+          "npm": "constructs"
+        },
+        "python": {
+          "distName": "constructs",
+          "module": "constructs"
+        }
+      }
+    }
+  },
+  "description": "Create a break glass role for emergency use in order to limit production console access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.",
+  "docs": {
+    "stability": "experimental"
+  },
+  "homepage": "https://github.com/awslabs/aws-break-glass-role",
+  "jsiiVersion": "5.0.0",
+  "keywords": [
+    "aws",
+    "breakglassrole",
+    "cdk",
+    "security",
+    "IAM role",
+    "least privilege"
+  ],
+  "license": "Apache-2.0",
+  "metadata": {
+    "jsii": {
+      "pacmak": {
+        "hasDefaultInterfaces": true
+      }
+    }
+  },
+  "name": "aws-break-glass-role",
+  "readme": {
+    "markdown": "# AWS Break Glass Role\n\n![Build](https://img.shields.io/github/actions/workflow/status/awslabs/aws-break-glass-role/release.yml?style=plastic)\n![License](https://img.shields.io/github/license/awslabs/aws-break-glass-role?style=plastic)\n![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=plastic)\n![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=plastic)\n\n***Create a break glass role for emergency use in order to limit AWS production account access. Configure automatic alerts and logging of activities in the role to secure its use in production environments.***\n\n- [Basic Implementation](#basic-implementation)\n- [Login Alerts](#login-alerts)\n    - [Messages](#messages)\n    - [Logging Login Alerts](#logging-login-alerts)\n- [Log Actions](#log-actions)\n    - [Logging Actions on Specific Services](#logging-actions-on-specific-services)\n    - [Retention](#retention)\n- [Regions](#regions)\n- [Break Glass Role Properties](#break-glass-role-properties)\n- [Break-Glass Deployer Permissions](#break-glass-deployer-permissions)\n- [Available Constructs](#available-constructs)\n- [Security](#security)\n- [License](#license)\n\n## Break Glass Roles\nOften when undergoing security reviews for applications in a full CI/CD deployment environment, it is recommended to restrict console access to the AWS account that hosts the production environment. A popular way to implement this recommendation is to remove all production write access completely from user and role policies.\n\nIn these cases it may be necessary to provision a user or role with elevated permissions to be used only in emergency cases. This type of role is typically called a \"Break Glass Role\" and is usually used in On Call situations or other circumstances when quick mitigating action is needed.\n\nSince Break Glass roles aren't supposed to be assumed on a regular basis, it's a good idea to outfit the role with alerts when someone assumes it and/or logging of the actions performed using it. So the purpose of this package is to automate this entire process - from the creation of the role to the login alerts to the logging of activities. If the break glass role already exists, it can be passed in as an argument as well.\n\n## Install\n\n```bash\nnpm install aws-break-glass-role\n```\n\n## Basic Implementation\nThe only required property for the `BreakGlassRole` Resource is `usernames`. `Usernames` is a list of user identities that will be assuming the break glass role. If federated access is used, the user identity for the role can be found in the assumed role ARN contained in the signin event. The format of the ARN will be `<RoleArn>:role/<RoleName>/<UserIdentity>`.\n```ts\n    new BreakGlassRole(stack, testName, {\n        usernames: [\"myUser\", \"otherUser\"]\n    });\n```\nIf you don't pass a `role` in, then the `Break Glass Role` will be created for you. The default created role with no policies attached will be created with full Administrator Access, but keep in mind that full access is not recommended even for Break Glass roles.\n\nPolicies can be attached to the role in lieu of full Administrator Access like this:\n```ts\n    new BreakGlassRole(stack, testName, {\n        usernames: [\"myUser\", \"otherUser\"],\n        managedPolicies: [\n            ManagedPolicy.fromAwsManagedPolicyName(\n                'job-function/ViewOnlyAccess'\n            )\n        ],\n        policyStatements: [\n            new PolicyStatement({\n                effect: Effect.ALLOW,\n                actions: ['s3:Get*', 's3:PutObject'],\n                resources: ['*']\n            }),\n                new PolicyStatement({\n                effect: Effect.DENY,\n                actions: ['s3:PutObjectAcl'],\n                resources: ['*']\n            })\n        ]\n\n    });\n```\nThe Principal of the trust policy for an internally created `Break-Glass Role` will be the Account Principal for the AWS account with conditions restricting the use of the role to the identities listed in the `usernames` property:\n```json\n{\n    \"Effect\": \"Allow\",\n        \"Principal\": {\n            \"AWS\": \"arn:aws:iam::111122223333:root\"\n        },\n    \"Action\": \"sts:AssumeRole\",\n    \"Condition\": {\n        \"StringEqualsIgnoreCase\": {\n            \"aws:username\": [\"myUser\", \"otherUser\"]\n        }\n    }\n}\n```\nYou can alternately use the `role` property to pass in an existing role to use as the `Break Glass Role`:\n```ts\n    new BreakGlassRole(stack, testName, {\n        usernames: [\"myUser\", \"otherUser\"],\n        role: Role.fromRoleName(stack, 'myImportedRole', 'myRole')\n    });\n```\nThe `BreakGlassRole` construct intends to automate as much of the process of outfitting a role for break-glass status as possible, but it also doesn't want to cause failures due to limited permissions.\n\nSo when you import a role to have it outfitted for break-glass status, it will only interact with the role directly if you set the `canManageBreakGlassRole` property to `true`.\n\nSo what does it mean for a role to take on \"break-glass\" status?\n\n## Login Alerts\n\nThe first way a role displays break-glass properties is by sending login alerts to the necessary parties whenever the role is assumed. This can be done by sending login alert emails, by logging the events to Amazon CloudWatch, or by doing both.\n\nTo send email alerts, pass a list of email addresses to the `loginAlertEmails` property:\n\n```ts\n    new BreakGlassRole(stack, testName, {\n        usernames: [\"myUser\"],\n        role: Role.fromRoleName('myRole'),\n        loginAlertEmails: [\n            \"myEmail@me.com\",\n            \"myEmail@example.com\",\n            \"myEmail@mail.com\"\n        ]\n    });\n```\nThe above implementation imports an existing role and sends alerts to the emails in `loginAlertEmails` whenever `myUser` assumes the role in the default region. Future versions of this package will allow for SMS and push notification alerts as well.\n\nThe alerts are created using an [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) rule with an [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html) target. The only manual step involved in activating this is that the recipients of the emails must confirm the SNS subscription before receiving alerts.\n\n### Messages\nBy default the Login Alerts will be sent as an unformatted JSON string of the Login event, but if you want to customize how the information is presented, you can use the `message` field. Some of the fields in the event can be referred to in this custom message using the following field names:\n\n#### Login Event Information\n* **username**: The user identity that logged in.\n* **principal**: A unique session identifier for the user. Sometimes the user name is appended using the format `<identifier>:<username>`\n* **account**: The account where the login took place.\n* **eventTime**: The timestamp when the event took place.\n* **region**: The AWS region where the login occurred.\n* **eventId**: The unique id of the event.\n* **requestId**: The unique id of the request, useful for [AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray.html) traces.\n* **ip**: The IP address of the event request\n* **userAgent**: The User agent listed in the request\n* **result**: The result of the request, either `Success` or `Failure`\n\n```ts\n new BreakGlassRole(stack, testName, {\n        usernames: [\"myUser\"],\n        role: Role.fromRoleName('myRole'),\n        loginAlertEmails: [\n            \"myEmail@me.com\",\n            \"myEmail@example.com\",\n            \"myEmail@mail.com\"\n        ],\n        message: \"User <principal> logged in at '<eventTime>'\"\n    });\n```\nThe alert that results from the above resource would say something like `User AIDACKCEVSQ6C2EXAMPLE:myUser logged in at '2022-12-29T21:34:59Z'`\n\n\n### Logging Login Alerts\nUse the `createLoginLogGroup` property to log the login alerts in Amazon CloudWatch:\n```ts\n new BreakGlassRole(stack, testName, {\n        usernames: [\"myUser\"],\n        role: Role.fromRoleName('myRole'),\n        createLoginLogGroup: true\n    });\n```\n\n## Log Actions\nThe second way a role displays break-glass properties is by keeping a log of user actions. You can log all user actions in the active regions by setting the `logActions` property to `true`, or you can specify which type of actions you want to log. For instance, if you only wanted to log `write` actions:\n```ts\n new BreakGlassRole(stack, testName, {\n        usernames: [\"myUser\"],\n        role: Role.fromRoleName('myRole'),\n        logActions: 'write'\n    });\n```\n\n### Logging Actions On Specific Services\nLogging user actions can become difficult to manage and expensive in many cases if left unchecked, so in addition to limiting logging to `read` or `write` actions, you can also limit by AWS service. Let's say you only need to monitor whether or not a user uses a `Break Glass Role` to perform write actions in AWS CodePipeline or CloudFormation. In that case you could pass a list of AWS service prefixes in the `logServices` property:\n```ts\n new BreakGlassRole(stack, testName, {\n    usernames: [\"myUser\"],\n    role: Role.fromRoleName('myRole'),\n    logServices: ['codepipeline', 'cloudformation']\n});\n```\nThen only events where the `eventSource` is that AWS service will be logged.\n\n### Retention\nAnother way to conserve resources while logging `Break Glass` actions is by setting a retention policy. Set the retention policy to delete logs after a certain period of time. This retention policy applies to all log groups created by the construct - for both log actions and login alerts:\n```ts\n new BreakGlassRole(stack, testName, {\n    usernames: [\"myUser\"],\n    role: Role.fromRoleName('myRole'),\n    retention: RetentionDays.SIX_MONTHS\n});\n```\n\n## Regions\nSince EventBridge rules are regional, in a default implementation alerts and log actions would only be activated when the user assumes the break-glass role in the default region. To ensure that alerts are sent cross-regionally, set the `regions` property:\n```ts\n    new BreakGlassRole(stack, testName, {\n        usernames: [\"myUser\"],\n        regions: ['us-east-2', 'us-west-2'],\n        role: Role.fromRoleName('myRole'),\n        loginAlertEmails: [\n            \"myEmail@me.com\",\n            \"myEmail@example.com\",\n            \"myEmail@mail.com\"\n        ]\n    });\n```\nTo send login alerts from all regions, set `regions` to `['*']`. To reduce operational overhead, the full EventBridge rule is not replicated in every region. In regions other than the main region, a smaller rule targets an event bus that then reroutes the event to the main region for the alert to be sent.\n\n**Note:** *All log groups will be centrally created in the main region and events from other regions will be routed there and appear in those logs.*\n\n## Break Glass Role Properties\n\n* **usernames** *(required)*: ([string](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays) | [IUser](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.IUser.html))[]\n\n* **role** *(optional)*: [IRole](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.IRole.html)\n\n* **managedPolicies** *(optional)*: [IManagedPolicy[]](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.IManagedPolicy.html)\n\n* **policyStatements** *(optional)*: [PolicyStatement[]](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.PolicyStatement.html)\n\n* **canManageBreakGlassRole** *(optional)*: [boolean](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean)\n\n* **loginAlertEmails** *(optional)*: [string[]](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays)\n\n* **regions** *(optional)*: [string[]](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays)\n\n* **eventBus** *(optional)*: [EventBus](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_events.EventBus.html) | [IEventBusOptions](src/types.ts)\n\n* **busRole** *(optional)*: [IRole](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.IRole.html)\n\n* **retention** *(optional)*: [RetentionDays](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_logs.RetentionDays.html)\n\n* **logActions** *(optional)*: ['read'](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html) | ['write'](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html) | [boolean](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean)\n\n* **logServices** *(optional)*: [string[]](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays)\n\n* **message** *(optional)*: [string](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean)\n\n* **createLoginLogGroup** *(optional)*: [boolean](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean)\n\n* **deployer** *(optional)*:  [string](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean) | [boolean](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean) | [IRole](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.IRole.html) | [IUser](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_iam.IUser.html)\n\n## Break-Glass Deployer Permissions\nYou can optionally use the `deployer` property to set a username, `IUser`, or `Role` as the entity needing permissions to deploy the stacks and initiate the integration tests for the `Break Glass Role`. If `canManageBreakGlassRole` is set to `true`, this role will also give the deployer permission to manage the `BreakGlassRole`.\n\nSetting `deployer` will create a role with Least-Privilege permissions set for deploying the `BreakGlassRole` stack contained herein. That role can then be delegated and used to signin to the AWS account programatically before running `cdk deploy`. If the user or role that deployer is set to already exists in the account, set `deployerExists` to `user` or `role` accordingly so that the construct knows to import them rather than try to create a new one.\n\n## Available Constructs\nIn addition to the main `BreakGlassRole`, `BreakGlassLoginAlert`, `BreakGlassLogActions`, and `BreakGlassDeployer` are all available as separate constructs. The major difference when using these constructs separately is that the `BreakGlassRole` cannot be created internally and an `IRole` must be passed to them as the `BreakGlassRole`.\n\n## Security\n\nSee [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.\n\n## License\n\nThis project is licensed under the Apache-2.0 License.\n\n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/awslabs/aws-break-glass-role"
+  },
+  "schema": "jsii/0.10.0",
+  "targets": {
+    "dotnet": {
+      "namespace": "Amazon.Module",
+      "packageId": "Amazon.Module",
+      "versionSuffix": "-breakglass"
+    },
+    "java": {
+      "maven": {
+        "artifactId": "breakglassrole",
+        "groupId": "software.amazon.awslabs",
+        "versionSuffix": ".breakglass"
+      },
+      "package": "software.amazon.awslabs.breakglassrole"
+    },
+    "js": {
+      "npm": "aws-break-glass-role"
+    },
+    "python": {
+      "distName": "breakglassrole.core",
+      "module": "awsbreakglassrole.core"
+    }
+  },
+  "types": {
+    "aws-break-glass-role.BreakGlassBase": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-cdk-lib.Resource",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassBase",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/util/base.ts",
+          "line": 9
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/util/base.ts",
+        "line": 6
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/base.ts",
+            "line": 35
+          },
+          "name": "adminWarn",
+          "parameters": [
+            {
+              "name": "policies",
+              "optional": true,
+              "type": {
+                "collection": {
+                  "elementtype": {
+                    "fqn": "aws-cdk-lib.aws_iam.IManagedPolicy"
+                  },
+                  "kind": "array"
+                }
+              }
+            }
+          ],
+          "protected": true
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/base.ts",
+            "line": 28
+          },
+          "name": "parseRegions",
+          "parameters": [
+            {
+              "name": "props",
+              "type": {
+                "fqn": "aws-break-glass-role.BreakGlassProps"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "optional": true,
+            "type": {
+              "collection": {
+                "elementtype": {
+                  "primitive": "string"
+                },
+                "kind": "array"
+              }
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassBase",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/util/base.ts",
+            "line": 20
+          },
+          "name": "usernames",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/base.ts",
+            "line": 9
+          },
+          "name": "id",
+          "protected": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/base.ts",
+            "line": 8
+          },
+          "name": "policyCount",
+          "protected": true,
+          "type": {
+            "primitive": "number"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/base.ts",
+            "line": 7
+          },
+          "name": "props",
+          "type": {
+            "fqn": "aws-break-glass-role.BreakGlassProps"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/base.ts",
+            "line": 9
+          },
+          "name": "scope",
+          "protected": true,
+          "type": {
+            "fqn": "constructs.Construct"
+          }
+        }
+      ],
+      "symbolId": "src/util/base:BreakGlassBase"
+    },
+    "aws-break-glass-role.BreakGlassBaseProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassBaseProps",
+      "interfaces": [
+        "aws-cdk-lib.ResourceProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 6
+      },
+      "name": "BreakGlassBaseProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 7
+          },
+          "name": "usernames",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "union": {
+                  "types": [
+                    {
+                      "primitive": "string"
+                    },
+                    {
+                      "fqn": "aws-cdk-lib.aws_iam.IUser"
+                    }
+                  ]
+                }
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 14
+          },
+          "name": "canManageBreakGlassRole",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 12
+          },
+          "name": "deployer",
+          "optional": true,
+          "type": {
+            "union": {
+              "types": [
+                {
+                  "primitive": "string"
+                },
+                {
+                  "primitive": "boolean"
+                },
+                {
+                  "fqn": "aws-cdk-lib.aws_iam.IUser"
+                },
+                {
+                  "fqn": "aws-cdk-lib.aws_iam.IRole"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 13
+          },
+          "name": "deployerExists",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 9
+          },
+          "name": "eventBus",
+          "optional": true,
+          "type": {
+            "union": {
+              "types": [
+                {
+                  "fqn": "aws-break-glass-role.IEventBusOptions"
+                },
+                {
+                  "fqn": "aws-cdk-lib.aws_events.EventBus"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 8
+          },
+          "name": "regions",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 10
+          },
+          "name": "retention",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_logs.RetentionDays"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 11
+          },
+          "name": "role",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        }
+      ],
+      "symbolId": "src/types:BreakGlassBaseProps"
+    },
+    "aws-break-glass-role.BreakGlassConstructBase": {
+      "abstract": true,
+      "assembly": "aws-break-glass-role",
+      "base": "aws-break-glass-role.BreakGlassBase",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassConstructBase",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/util/construct-base.ts",
+          "line": 22
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/util/construct-base.ts",
+        "line": 10
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 39
+          },
+          "name": "addRule",
+          "parameters": [
+            {
+              "name": "region",
+              "type": {
+                "primitive": "string"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassRuleBase"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 45
+          },
+          "name": "findEventBus",
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.EventBus"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 51
+          },
+          "name": "generateTargetBusRole",
+          "parameters": [
+            {
+              "name": "eventBus",
+              "type": {
+                "fqn": "aws-cdk-lib.aws_events.EventBus"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_iam.IRole"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 37
+          },
+          "name": "setRule",
+          "parameters": [
+            {
+              "name": "region",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "name",
+              "type": {
+                "primitive": "string"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassRuleBase"
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassConstructBase",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 12
+          },
+          "name": "additionalRules",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "aws-break-glass-role.BreakGlassRuleBase"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 21
+          },
+          "name": "busCount",
+          "protected": true,
+          "type": {
+            "primitive": "number"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 15
+          },
+          "name": "eventBus",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_events.EventBus"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 22
+          },
+          "name": "id",
+          "overrides": "aws-break-glass-role.BreakGlassBase",
+          "protected": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 18
+          },
+          "name": "mainRegion",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 11
+          },
+          "name": "mainRule",
+          "type": {
+            "fqn": "aws-break-glass-role.BreakGlassRuleBase"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 20
+          },
+          "name": "ruleCount",
+          "protected": true,
+          "type": {
+            "primitive": "number"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 22
+          },
+          "name": "scope",
+          "overrides": "aws-break-glass-role.BreakGlassBase",
+          "protected": true,
+          "type": {
+            "fqn": "constructs.Construct"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 14
+          },
+          "name": "targetBusRole",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 17
+          },
+          "name": "role",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/construct-base.ts",
+            "line": 16
+          },
+          "name": "topic",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_sns.ITopic"
+          }
+        }
+      ],
+      "symbolId": "src/util/construct-base:BreakGlassConstructBase"
+    },
+    "aws-break-glass-role.BreakGlassDeployer": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-cdk-lib.Resource",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassDeployer",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/constructs/deploy.ts",
+          "line": 18
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "optional": true,
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassDeployerProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/constructs/deploy.ts",
+        "line": 14
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/deploy.ts",
+            "line": 37
+          },
+          "name": "generateDeployerPermissions",
+          "returns": {
+            "type": {
+              "collection": {
+                "elementtype": {
+                  "fqn": "aws-cdk-lib.aws_iam.PolicyStatement"
+                },
+                "kind": "array"
+              }
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassDeployer",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/deploy.ts",
+            "line": 15
+          },
+          "name": "assumedBy",
+          "type": {
+            "union": {
+              "types": [
+                {
+                  "fqn": "aws-cdk-lib.aws_iam.IUser"
+                },
+                {
+                  "fqn": "aws-cdk-lib.aws_iam.IRole"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/deploy.ts",
+            "line": 20
+          },
+          "name": "id",
+          "protected": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/deploy.ts",
+            "line": 19
+          },
+          "name": "scope",
+          "protected": true,
+          "type": {
+            "fqn": "constructs.Construct"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/deploy.ts",
+            "line": 21
+          },
+          "name": "props",
+          "optional": true,
+          "protected": true,
+          "type": {
+            "fqn": "aws-break-glass-role.BreakGlassDeployerProps"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/deploy.ts",
+            "line": 16
+          },
+          "name": "role",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        }
+      ],
+      "symbolId": "src/constructs/deploy:BreakGlassDeployer"
+    },
+    "aws-break-glass-role.BreakGlassDeployerProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassDeployerProps",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 47
+      },
+      "name": "BreakGlassDeployerProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 49
+          },
+          "name": "assumedBy",
+          "optional": true,
+          "type": {
+            "union": {
+              "types": [
+                {
+                  "primitive": "string"
+                },
+                {
+                  "fqn": "aws-cdk-lib.aws_iam.IUser"
+                },
+                {
+                  "fqn": "aws-cdk-lib.aws_iam.IRole"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 48
+          },
+          "name": "breakGlassRole",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 50
+          },
+          "name": "exists",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/types:BreakGlassDeployerProps"
+    },
+    "aws-break-glass-role.BreakGlassLogActions": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-break-glass-role.BreakGlassConstructBase",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassLogActions",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/constructs/log-actions.ts",
+          "line": 9
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassLogActionsProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/constructs/log-actions.ts",
+        "line": 7
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/log-actions.ts",
+            "line": 12
+          },
+          "name": "setRule",
+          "overrides": "aws-break-glass-role.BreakGlassConstructBase",
+          "parameters": [
+            {
+              "name": "region",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "name",
+              "type": {
+                "primitive": "string"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassRuleBase"
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassLogActions",
+      "symbolId": "src/constructs/log-actions:BreakGlassLogActions"
+    },
+    "aws-break-glass-role.BreakGlassLogActionsProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassLogActionsProps",
+      "interfaces": [
+        "aws-break-glass-role.BreakGlassBaseProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 53
+      },
+      "name": "BreakGlassLogActionsProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 54
+          },
+          "name": "logActions",
+          "optional": true,
+          "type": {
+            "union": {
+              "types": [
+                {
+                  "primitive": "boolean"
+                },
+                {
+                  "primitive": "string"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 55
+          },
+          "name": "logServices",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        }
+      ],
+      "symbolId": "src/types:BreakGlassLogActionsProps"
+    },
+    "aws-break-glass-role.BreakGlassLogGroup": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-cdk-lib.Resource",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassLogGroup",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/util/log-group.ts",
+          "line": 11
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassLogProps"
+            }
+          }
+        ]
+      },
+      "interfaces": [
+        "aws-cdk-lib.aws_events.IRuleTarget"
+      ],
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/util/log-group.ts",
+        "line": 9
+      },
+      "methods": [
+        {
+          "docs": {
+            "remarks": "NOTE: Do not use the various `inputXxx` options. They can be set in a call to `addTarget`.",
+            "stability": "experimental",
+            "summary": "Returns the rule target specification."
+          },
+          "locationInModule": {
+            "filename": "src/util/log-group.ts",
+            "line": 23
+          },
+          "name": "bind",
+          "overrides": "aws-cdk-lib.aws_events.IRuleTarget",
+          "parameters": [
+            {
+              "name": "rule",
+              "type": {
+                "fqn": "aws-cdk-lib.aws_events.IRule"
+              }
+            },
+            {
+              "name": "id",
+              "optional": true,
+              "type": {
+                "primitive": "string"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.RuleTargetConfig"
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassLogGroup",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/log-group.ts",
+            "line": 10
+          },
+          "name": "ruleTarget",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_events_targets.CloudWatchLogGroup"
+          }
+        }
+      ],
+      "symbolId": "src/util/log-group:BreakGlassLogGroup"
+    },
+    "aws-break-glass-role.BreakGlassLogProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassLogProps",
+      "interfaces": [
+        "aws-cdk-lib.ResourceProps",
+        "aws-cdk-lib.aws_logs.LogGroupProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 58
+      },
+      "name": "BreakGlassLogProps",
+      "symbolId": "src/types:BreakGlassLogProps"
+    },
+    "aws-break-glass-role.BreakGlassLoginAlert": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-break-glass-role.BreakGlassConstructBase",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassLoginAlert",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/constructs/login-alert.ts",
+          "line": 11
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassLoginAlertProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/constructs/login-alert.ts",
+        "line": 10
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/login-alert.ts",
+            "line": 15
+          },
+          "name": "setRule",
+          "overrides": "aws-break-glass-role.BreakGlassConstructBase",
+          "parameters": [
+            {
+              "name": "region",
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "name",
+              "type": {
+                "primitive": "string"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassRuleBase"
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassLoginAlert",
+      "symbolId": "src/constructs/login-alert:BreakGlassLoginAlert"
+    },
+    "aws-break-glass-role.BreakGlassLoginAlertProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassLoginAlertProps",
+      "interfaces": [
+        "aws-break-glass-role.BreakGlassBaseProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 41
+      },
+      "name": "BreakGlassLoginAlertProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 43
+          },
+          "name": "createLoginLogGroup",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 42
+          },
+          "name": "loginAlertEmails",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 44
+          },
+          "name": "message",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/types:BreakGlassLoginAlertProps"
+    },
+    "aws-break-glass-role.BreakGlassProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassProps",
+      "interfaces": [
+        "aws-break-glass-role.BreakGlassBaseProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 17
+      },
+      "name": "BreakGlassProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 23
+          },
+          "name": "busRole",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 21
+          },
+          "name": "createLoginLogGroup",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 19
+          },
+          "name": "logActions",
+          "optional": true,
+          "type": {
+            "union": {
+              "types": [
+                {
+                  "primitive": "boolean"
+                },
+                {
+                  "primitive": "string"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 18
+          },
+          "name": "loginAlertEmails",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 20
+          },
+          "name": "logServices",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 22
+          },
+          "name": "message",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/types:BreakGlassProps"
+    },
+    "aws-break-glass-role.BreakGlassRole": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-break-glass-role.BreakGlassBase",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassRole",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/constructs/role.ts",
+          "line": 25
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassRoleProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/constructs/role.ts",
+        "line": 20
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/role.ts",
+            "line": 60
+          },
+          "name": "createRole",
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_iam.IRole"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/role.ts",
+            "line": 103
+          },
+          "name": "generateInlinePolicies",
+          "protected": true,
+          "returns": {
+            "optional": true,
+            "type": {
+              "collection": {
+                "elementtype": {
+                  "fqn": "aws-cdk-lib.aws_iam.PolicyDocument"
+                },
+                "kind": "map"
+              }
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/role.ts",
+            "line": 91
+          },
+          "name": "generateManagedPolicies",
+          "protected": true,
+          "returns": {
+            "optional": true,
+            "type": {
+              "collection": {
+                "elementtype": {
+                  "fqn": "aws-cdk-lib.aws_iam.IManagedPolicy"
+                },
+                "kind": "array"
+              }
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassRole",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/role.ts",
+            "line": 21
+          },
+          "name": "role",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/role.ts",
+            "line": 24
+          },
+          "name": "canManageBreakGlassRole",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/role.ts",
+            "line": 23
+          },
+          "name": "logActions",
+          "optional": true,
+          "type": {
+            "fqn": "aws-break-glass-role.BreakGlassLogActions"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/constructs/role.ts",
+            "line": 22
+          },
+          "name": "loginAlert",
+          "optional": true,
+          "type": {
+            "fqn": "aws-break-glass-role.BreakGlassLoginAlert"
+          }
+        }
+      ],
+      "symbolId": "src/constructs/role:BreakGlassRole"
+    },
+    "aws-break-glass-role.BreakGlassRoleProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassRoleProps",
+      "interfaces": [
+        "aws-break-glass-role.BreakGlassProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 26
+      },
+      "name": "BreakGlassRoleProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 27
+          },
+          "name": "managedPolicies",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "aws-cdk-lib.aws_iam.IManagedPolicy"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 28
+          },
+          "name": "policyStatements",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "aws-cdk-lib.aws_iam.PolicyStatement"
+              },
+              "kind": "array"
+            }
+          }
+        }
+      ],
+      "symbolId": "src/types:BreakGlassRoleProps"
+    },
+    "aws-break-glass-role.BreakGlassRuleBase": {
+      "abstract": true,
+      "assembly": "aws-break-glass-role",
+      "base": "aws-cdk-lib.Resource",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassRuleBase",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/util/rule-base.ts",
+          "line": 18
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassRuleBaseProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/util/rule-base.ts",
+        "line": 8
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 61
+          },
+          "name": "addTarget",
+          "parameters": [
+            {
+              "name": "target",
+              "type": {
+                "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassRuleBase"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 67
+          },
+          "name": "addTargets",
+          "parameters": [
+            {
+              "name": "targets",
+              "type": {
+                "collection": {
+                  "elementtype": {
+                    "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+                  },
+                  "kind": "array"
+                }
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "aws-break-glass-role.BreakGlassRuleBase"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 73
+          },
+          "name": "createBasePattern",
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.EventPattern"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 42
+          },
+          "name": "createPattern",
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.EventPattern"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 43
+          },
+          "name": "createTargets",
+          "parameters": [
+            {
+              "name": "message",
+              "optional": true,
+              "type": {
+                "fqn": "aws-cdk-lib.aws_events.RuleTargetInput"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "union": {
+                "types": [
+                  {
+                    "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+                  },
+                  {
+                    "collection": {
+                      "elementtype": {
+                        "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+                      },
+                      "kind": "array"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassRuleBase",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 57
+          },
+          "name": "basePattern",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_events.EventPattern"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 45
+          },
+          "name": "isMainRule",
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 53
+          },
+          "name": "pattern",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_events.EventPattern"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 12
+          },
+          "name": "region",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 49
+          },
+          "name": "targets",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 11
+          },
+          "name": "eventBus",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_events.EventBus"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 16
+          },
+          "name": "hasMessage",
+          "protected": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 20
+          },
+          "name": "id",
+          "protected": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 21
+          },
+          "name": "props",
+          "protected": true,
+          "type": {
+            "fqn": "aws-break-glass-role.BreakGlassRuleBaseProps"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 9
+          },
+          "name": "rule",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_events.Rule"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 19
+          },
+          "name": "scope",
+          "protected": true,
+          "type": {
+            "fqn": "constructs.Construct"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 15
+          },
+          "name": "targetCount",
+          "protected": true,
+          "type": {
+            "primitive": "number"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/util/rule-base.ts",
+            "line": 10
+          },
+          "name": "usernames",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "union": {
+                  "types": [
+                    {
+                      "primitive": "string"
+                    },
+                    {
+                      "fqn": "aws-cdk-lib.aws_iam.IUser"
+                    },
+                    {
+                      "fqn": "aws-cdk-lib.aws_iam.IRole"
+                    }
+                  ]
+                }
+              },
+              "kind": "array"
+            }
+          }
+        }
+      ],
+      "symbolId": "src/util/rule-base:BreakGlassRuleBase"
+    },
+    "aws-break-glass-role.BreakGlassRuleBaseProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassRuleBaseProps",
+      "interfaces": [
+        "aws-cdk-lib.ResourceProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 31
+      },
+      "name": "BreakGlassRuleBaseProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 34
+          },
+          "name": "busRole",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 33
+          },
+          "name": "eventBus",
+          "type": {
+            "fqn": "aws-cdk-lib.aws_events.EventBus"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 35
+          },
+          "name": "mainRegion",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 32
+          },
+          "name": "usernames",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "union": {
+                  "types": [
+                    {
+                      "primitive": "string"
+                    },
+                    {
+                      "fqn": "aws-cdk-lib.aws_iam.IUser"
+                    },
+                    {
+                      "fqn": "aws-cdk-lib.aws_iam.IRole"
+                    }
+                  ]
+                }
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 38
+          },
+          "name": "retentionDays",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_logs.RetentionDays"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 37
+          },
+          "name": "role",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_iam.IRole"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 36
+          },
+          "name": "targetInput",
+          "optional": true,
+          "type": {
+            "fqn": "aws-cdk-lib.aws_events.RuleTargetInput"
+          }
+        }
+      ],
+      "symbolId": "src/types:BreakGlassRuleBaseProps"
+    },
+    "aws-break-glass-role.BreakGlassTargetInput": {
+      "assembly": "aws-break-glass-role",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.BreakGlassTargetInput",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/input/target-input.ts",
+          "line": 13
+        },
+        "parameters": [
+          {
+            "name": "rawMessage",
+            "optional": true,
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "additionalEvents",
+            "optional": true,
+            "type": {
+              "collection": {
+                "elementtype": {
+                  "primitive": "string"
+                },
+                "kind": "map"
+              }
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/input/target-input.ts",
+        "line": 4
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 9
+          },
+          "name": "generateTargetInput",
+          "parameters": [
+            {
+              "name": "msg",
+              "optional": true,
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "additionalEvents",
+              "optional": true,
+              "type": {
+                "collection": {
+                  "elementtype": {
+                    "primitive": "string"
+                  },
+                  "kind": "map"
+                }
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.RuleTargetInput"
+            }
+          },
+          "static": true
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 26
+          },
+          "name": "generateRawEventTarget",
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.RuleTargetInput"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 20
+          },
+          "name": "generateTarget",
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.RuleTargetInput"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 43
+          },
+          "name": "getEvent",
+          "parameters": [
+            {
+              "name": "additionalEvents",
+              "optional": true,
+              "type": {
+                "collection": {
+                  "elementtype": {
+                    "primitive": "string"
+                  },
+                  "kind": "map"
+                }
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "collection": {
+                "elementtype": {
+                  "primitive": "string"
+                },
+                "kind": "map"
+              }
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 30
+          },
+          "name": "getMessageEvent",
+          "parameters": [
+            {
+              "name": "message",
+              "optional": true,
+              "type": {
+                "primitive": "string"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-break-glass-role.TargetInput"
+            }
+          }
+        }
+      ],
+      "name": "BreakGlassTargetInput",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 6
+          },
+          "name": "rawEvent",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 5
+          },
+          "name": "targetEvent",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 7
+          },
+          "name": "message",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/input/target-input.ts",
+            "line": 13
+          },
+          "name": "rawMessage",
+          "optional": true,
+          "protected": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/input/target-input:BreakGlassTargetInput"
+    },
+    "aws-break-glass-role.CidrRange": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.CidrRange",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 82
+      },
+      "name": "CidrRange",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 83
+          },
+          "name": "cidr",
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/types:CidrRange"
+    },
+    "aws-break-glass-role.EventPatternFieldFilter": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.EventPatternFieldFilter",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 88
+      },
+      "name": "EventPatternFieldFilter",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 92
+          },
+          "name": "anythingBut",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 91
+          },
+          "name": "exists",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 95
+          },
+          "name": "numeric",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "union": {
+                  "types": [
+                    {
+                      "primitive": "number"
+                    },
+                    {
+                      "primitive": "string"
+                    }
+                  ]
+                }
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 89
+          },
+          "name": "prefix",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 96
+          },
+          "name": "sourceIpAddress",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "fqn": "aws-break-glass-role.CidrRange"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 90
+          },
+          "name": "suffix",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/types:EventPatternFieldFilter"
+    },
+    "aws-break-glass-role.IEventBusOptions": {
+      "assembly": "aws-break-glass-role",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.IEventBusOptions",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 70
+      },
+      "name": "IEventBusOptions",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 72
+          },
+          "name": "fieldValue",
+          "type": {
+            "primitive": "string"
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 71
+          },
+          "name": "fieldType",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/types:IEventBusOptions"
+    },
+    "aws-break-glass-role.LogActionsRule": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-break-glass-role.BreakGlassRuleBase",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.LogActionsRule",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/events/rules/log-actions.ts",
+          "line": 11
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.LogActionsRuleProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/events/rules/log-actions.ts",
+        "line": 8
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/events/rules/log-actions.ts",
+            "line": 34
+          },
+          "name": "createPattern",
+          "overrides": "aws-break-glass-role.BreakGlassRuleBase",
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.EventPattern"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/events/rules/log-actions.ts",
+            "line": 26
+          },
+          "name": "createTargets",
+          "overrides": "aws-break-glass-role.BreakGlassRuleBase",
+          "parameters": [
+            {
+              "name": "message",
+              "optional": true,
+              "type": {
+                "fqn": "aws-cdk-lib.aws_events.RuleTargetInput"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "union": {
+                "types": [
+                  {
+                    "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+                  },
+                  {
+                    "collection": {
+                      "elementtype": {
+                        "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+                      },
+                      "kind": "array"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "name": "LogActionsRule",
+      "properties": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/events/rules/log-actions.ts",
+            "line": 10
+          },
+          "name": "eventSource",
+          "optional": true,
+          "type": {
+            "union": {
+              "types": [
+                {
+                  "primitive": "string"
+                },
+                {
+                  "primitive": "boolean"
+                },
+                {
+                  "fqn": "aws-break-glass-role.EventPatternFieldFilter"
+                },
+                {
+                  "collection": {
+                    "elementtype": {
+                      "union": {
+                        "types": [
+                          {
+                            "primitive": "string"
+                          },
+                          {
+                            "primitive": "boolean"
+                          },
+                          {
+                            "fqn": "aws-break-glass-role.EventPatternFieldFilter"
+                          }
+                        ]
+                      }
+                    },
+                    "kind": "array"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/events/rules/log-actions.ts",
+            "line": 9
+          },
+          "name": "readOnly",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        }
+      ],
+      "symbolId": "src/events/rules/log-actions:LogActionsRule"
+    },
+    "aws-break-glass-role.LogActionsRuleProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.LogActionsRuleProps",
+      "interfaces": [
+        "aws-break-glass-role.BreakGlassRuleBaseProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 65
+      },
+      "name": "LogActionsRuleProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 66
+          },
+          "name": "logActions",
+          "optional": true,
+          "type": {
+            "union": {
+              "types": [
+                {
+                  "primitive": "boolean"
+                },
+                {
+                  "primitive": "string"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 67
+          },
+          "name": "logServices",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        }
+      ],
+      "symbolId": "src/types:LogActionsRuleProps"
+    },
+    "aws-break-glass-role.LoginAlertRule": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-break-glass-role.BreakGlassRuleBase",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.LoginAlertRule",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/events/rules/login-alert.ts",
+          "line": 10
+        },
+        "parameters": [
+          {
+            "name": "scope",
+            "type": {
+              "fqn": "constructs.Construct"
+            }
+          },
+          {
+            "name": "id",
+            "type": {
+              "primitive": "string"
+            }
+          },
+          {
+            "name": "props",
+            "type": {
+              "fqn": "aws-break-glass-role.LoginAlertRuleProps"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/events/rules/login-alert.ts",
+        "line": 8
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/events/rules/login-alert.ts",
+            "line": 18
+          },
+          "name": "createBasePattern",
+          "overrides": "aws-break-glass-role.BreakGlassRuleBase",
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.EventPattern"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/events/rules/login-alert.ts",
+            "line": 24
+          },
+          "name": "createPattern",
+          "overrides": "aws-break-glass-role.BreakGlassRuleBase",
+          "protected": true,
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.EventPattern"
+            }
+          }
+        },
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/events/rules/login-alert.ts",
+            "line": 37
+          },
+          "name": "createTargets",
+          "overrides": "aws-break-glass-role.BreakGlassRuleBase",
+          "parameters": [
+            {
+              "name": "message",
+              "optional": true,
+              "type": {
+                "fqn": "aws-cdk-lib.aws_events.RuleTargetInput"
+              }
+            }
+          ],
+          "protected": true,
+          "returns": {
+            "type": {
+              "union": {
+                "types": [
+                  {
+                    "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+                  },
+                  {
+                    "collection": {
+                      "elementtype": {
+                        "fqn": "aws-cdk-lib.aws_events.IRuleTarget"
+                      },
+                      "kind": "array"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "name": "LoginAlertRule",
+      "symbolId": "src/events/rules/login-alert:LoginAlertRule"
+    },
+    "aws-break-glass-role.LoginAlertRuleProps": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.LoginAlertRuleProps",
+      "interfaces": [
+        "aws-break-glass-role.BreakGlassRuleBaseProps"
+      ],
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 60
+      },
+      "name": "LoginAlertRuleProps",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 61
+          },
+          "name": "loginAlertEmails",
+          "optional": true,
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "array"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 62
+          },
+          "name": "sendLogs",
+          "optional": true,
+          "type": {
+            "primitive": "boolean"
+          }
+        }
+      ],
+      "symbolId": "src/types:LoginAlertRuleProps"
+    },
+    "aws-break-glass-role.SigninTargetInput": {
+      "assembly": "aws-break-glass-role",
+      "base": "aws-break-glass-role.BreakGlassTargetInput",
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.SigninTargetInput",
+      "initializer": {
+        "docs": {
+          "stability": "experimental"
+        },
+        "locationInModule": {
+          "filename": "src/input/signin.ts",
+          "line": 12
+        },
+        "parameters": [
+          {
+            "name": "msg",
+            "optional": true,
+            "type": {
+              "primitive": "string"
+            }
+          }
+        ]
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/input/signin.ts",
+        "line": 5
+      },
+      "methods": [
+        {
+          "docs": {
+            "stability": "experimental"
+          },
+          "locationInModule": {
+            "filename": "src/input/signin.ts",
+            "line": 6
+          },
+          "name": "generateTargetInput",
+          "overrides": "aws-break-glass-role.BreakGlassTargetInput",
+          "parameters": [
+            {
+              "name": "msg",
+              "optional": true,
+              "type": {
+                "primitive": "string"
+              }
+            },
+            {
+              "name": "additionalEvents",
+              "optional": true,
+              "type": {
+                "collection": {
+                  "elementtype": {
+                    "primitive": "string"
+                  },
+                  "kind": "map"
+                }
+              }
+            }
+          ],
+          "returns": {
+            "type": {
+              "fqn": "aws-cdk-lib.aws_events.RuleTargetInput"
+            }
+          },
+          "static": true
+        }
+      ],
+      "name": "SigninTargetInput",
+      "symbolId": "src/input/signin:SigninTargetInput"
+    },
+    "aws-break-glass-role.TargetInput": {
+      "assembly": "aws-break-glass-role",
+      "datatype": true,
+      "docs": {
+        "stability": "experimental"
+      },
+      "fqn": "aws-break-glass-role.TargetInput",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/types.ts",
+        "line": 77
+      },
+      "name": "TargetInput",
+      "properties": [
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 78
+          },
+          "name": "targetEvent",
+          "type": {
+            "collection": {
+              "elementtype": {
+                "primitive": "string"
+              },
+              "kind": "map"
+            }
+          }
+        },
+        {
+          "abstract": true,
+          "docs": {
+            "stability": "experimental"
+          },
+          "immutable": true,
+          "locationInModule": {
+            "filename": "src/types.ts",
+            "line": 79
+          },
+          "name": "message",
+          "optional": true,
+          "type": {
+            "primitive": "string"
+          }
+        }
+      ],
+      "symbolId": "src/types:TargetInput"
+    }
+  },
+  "version": "0.0.0-dev.1",
+  "fingerprint": "o2T6AQ7dxT5ZEcj8ZD/R+mtrANqbIxBLSXQD9B906dQ="
+}

@@ -1,13 +1,13 @@
 import { EventBus } from "aws-cdk-lib/aws-events";
 import { Construct } from "constructs";
-import { EventBusOptions } from "../../types";
+import { IEventBusOptions } from "../../types";
 
 export class BreakGlassEventBus extends EventBus {
     
-    constructor(scope: Construct, id: string, props?:EventBusOptions) {
+    constructor(scope: Construct, id: string, props?:IEventBusOptions) {
         super(scope,id, {
-            eventBusName: props?.type === 'source' ? undefined : props?.value || id,
-            eventSourceName: props?.type !== 'source' ? undefined : props?.value
+            eventBusName: props?.fieldType === 'source' ? undefined : props?.fieldValue || id,
+            eventSourceName: props?.fieldType !== 'source' ? undefined : props?.fieldValue
         });
     }
 }

@@ -10,13 +10,7 @@ import {
     Role, 
     User 
 } from "aws-cdk-lib/aws-iam";
-
-export interface BreakGlassDeployerProps {
-    breakGlassRole?: IRole
-    assumedBy?: string | IUser | IRole
-    exists?: 'user' | 'role'
-}
-
+import { BreakGlassDeployerProps } from "../types";
 export class BreakGlassDeployer extends Resource {
     assumedBy: IUser | IRole
     role?: IRole = this.props?.breakGlassRole
@@ -35,12 +29,12 @@ export class BreakGlassDeployer extends Resource {
             `${this.id}-deployer-policy`,
             {
                 policyName: `${this.id}-deployer-policy-${Stack.of(this).region}`,
-                statements: this.getDeployerPermissions()
+                statements: this.generateDeployerPermissions()
             }
         ))
     }
 
-    getDeployerPermissions(): PolicyStatement[] {
+    generateDeployerPermissions(): PolicyStatement[] {
         const res = [
             new PolicyStatement({
                 effect: Effect.ALLOW,

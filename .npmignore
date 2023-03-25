@@ -5,9 +5,20 @@ node_modules
 cdk.out
 coverage/
 test/
-src/
+src/*
+src/.*
+!src/index.ts
+!src/types.ts
 test.ts
 .git/
 .github/
 *.config.*
 assets/
+
+
+# Exclude jsii outdir
+jsii
+
+# Include .jsii and .jsii.gz
+!.jsii
+!.jsii.gz

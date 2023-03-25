@@ -3,13 +3,8 @@ import { SnsTopic } from "aws-cdk-lib/aws-events-targets";
 import { Subscription, SubscriptionProtocol, Topic } from "aws-cdk-lib/aws-sns";
 import { Construct } from "constructs";
 import { BreakGlassLogGroup } from "../../util/log-group";
-import { BreakGlassRuleBase, BreakGlassRuleBaseProps } from "../../util/rule-base";
-
-export interface LoginAlertRuleProps extends BreakGlassRuleBaseProps {
-    loginAlertEmails?: string[]
-    sendLogs?:boolean
-}
-
+import { BreakGlassRuleBase } from "../../util/rule-base";
+import { LoginAlertRuleProps } from "../../types";
 export class LoginAlertRule extends BreakGlassRuleBase {
 
     constructor(
@@ -20,13 +15,13 @@ export class LoginAlertRule extends BreakGlassRuleBase {
         super(scope,id,props);
     }
 
-    protected setBasePattern(): EventPattern {
+    protected createBasePattern(): EventPattern {
         return {
             source: ['aws.signin']
         }
     }
 
-    protected setPattern(): EventPattern {
+    protected createPattern(): EventPattern {
         const basePattern = this.basePattern;
         if (!this.isMainRule) return basePattern;
         return {
@@ -39,7 +34,8 @@ export class LoginAlertRule extends BreakGlassRuleBase {
         }
     }
 
-    protected setTargets(message:RuleTargetInput): IRuleTarget[] {
+    protected createTargets(message?:RuleTargetInput): IRuleTarget | IRuleTarget[] {
+        this.hasMessage = !!message;
         const props = this.props as LoginAlertRuleProps;
         const res:IRuleTarget[] = []
         if (!props.loginAlertEmails?.length && !props.sendLogs) {
@@ -56,7 +52,7 @@ export class LoginAlertRule extends BreakGlassRuleBase {
                     topic,
                 })
             });
-            res.push(new SnsTopic(topic, {message}))
+            if (message) res.push(new SnsTopic(topic, {message}))
         }
         if (props.sendLogs) { 
             res.push(

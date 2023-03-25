@@ -1,51 +1,43 @@
 import { EventField, RuleTargetInput } from "aws-cdk-lib/aws-events"
-
-export interface EventInput {
-    [name:string]: string
-}
-
-export interface TargetInput {
-    event: EventInput
-    message?: string
-}
+import { EventInput, TargetInput } from "../types";
 
 export class BreakGlassTargetInput {
-    readonly event: EventInput
+    readonly targetEvent: EventInput
     readonly rawEvent: EventInput;
     readonly message?: string
 
-    static getTarget(msg?:string, additionalEvents?:EventInput): RuleTargetInput {
-        return (new BreakGlassTargetInput(msg,additionalEvents)).getTarget();
+    static generateTargetInput(msg?:string, additionalEvents?:EventInput): RuleTargetInput {
+        return (new BreakGlassTargetInput(msg,additionalEvents)).generateTarget();
     }
 
     constructor(protected rawMessage?: string, additionalEvents?:EventInput) {
         this.rawEvent = this.getEvent(additionalEvents);
-        const { event, message} = this.getMessageEvent(rawMessage);
-        this.event = event;
+        const { targetEvent, message} = this.getMessageEvent(rawMessage);
+        this.targetEvent = targetEvent;
         this.message = message;
     }
 
-    getTarget(): RuleTargetInput {
+    generateTarget(): RuleTargetInput {
         return this.message ? 
             RuleTargetInput.fromText(this.message) : 
-            RuleTargetInput.fromObject(this.event);
+            RuleTargetInput.fromObject(this.targetEvent);
     }
 
-    getRawEventTarget(): RuleTargetInput {
+    generateRawEventTarget(): RuleTargetInput {
         return RuleTargetInput.fromObject(this.rawEvent)
     }
 
     protected getMessageEvent(message?:string): TargetInput {
-        const event: EventInput = {};
-        if (!message) return {event: this.rawEvent};
+        const targetEvent: EventInput = {};
+        if (!message) return {targetEvent: this.rawEvent};
         let regex, $event = this.rawEvent;
         while (regex = /\<([^\>]*)\>/g.exec(message)) {
             const str =  $event[regex[1] as keyof EventInput];
             if (!str) continue;
             message = message.replace(regex[0], str);
-            event[regex[1]] = $event[regex[1]];
+            targetEvent[regex[1]] = $event[regex[1]];
         }
-        return {event,message}
+        return {targetEvent,message}
     }
 
     protected getEvent(additionalEvents: EventInput = {}): EventInput {

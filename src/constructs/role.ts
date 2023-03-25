@@ -69,8 +69,8 @@ export class BreakGlassRole extends BreakGlassBase {
             role = new Role(this.scope, `${this.id}-break-glass`, {
                 roleName: `${this.id}-break-glass`,
                 assumedBy,
-                managedPolicies: this.getManagedPolicies(),
-                inlinePolicies: this.getInlinePolicies(),
+                managedPolicies: this.generateManagedPolicies(),
+                inlinePolicies: this.generateInlinePolicies(),
             });
         }
         if (this.canManageBreakGlassRole) {
@@ -88,7 +88,7 @@ export class BreakGlassRole extends BreakGlassBase {
         return role;
       }
     
-      protected getManagedPolicies(): IManagedPolicy[] | undefined {
+      protected generateManagedPolicies(): IManagedPolicy[] | undefined {
         let policies: IManagedPolicy[] | undefined = [];
         const props = this.props as BreakGlassRoleProps;
         const mpLength = props.managedPolicies?.length || 0;
@@ -100,7 +100,7 @@ export class BreakGlassRole extends BreakGlassBase {
         return policies;
       }
     
-      protected getInlinePolicies(): ({ [name:string]: PolicyDocument}) | undefined {
+      protected generateInlinePolicies(): ({ [name:string]: PolicyDocument}) | undefined {
         const props = this.props as BreakGlassRoleProps;
         if (!props.policyStatements?.length) return undefined;
         this.policyCount++;

@@ -20,3 +20,4 @@ repolinter/
 .DS_Store
 #package-lock.json
 gitlab-ci.yaml
+jsii

@@ -13,7 +13,7 @@ export class BreakGlassBase extends Resource {
     this.props = {
       ...props,
       region: props.region || Stack.of(this).region || 'us-east-1',
-      regions: this.setRegions(props)
+      regions: this.parseRegions(props)
     }
   }
 
@@ -25,7 +25,7 @@ export class BreakGlassBase extends Resource {
     });
   }
 
-  protected setRegions(props:BreakGlassProps): string[] | undefined {
+  protected parseRegions(props:BreakGlassProps): string[] | undefined {
     if (props.regions?.length === 1 && props.regions[0] === '*') {
       return Regions;
     }
