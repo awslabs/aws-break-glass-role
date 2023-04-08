@@ -21,3 +21,4 @@ repolinter/
 #package-lock.json
 gitlab-ci.yaml
 jsii
+package-lock.json
