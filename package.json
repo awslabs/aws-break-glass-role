@@ -59,6 +59,11 @@
   "dependencies": {
     "aws-cdk-lib": "^2.55.1"
   },
+  "overrides": {
+    "aws-sdk": {
+      "xml2js": "^0.4.23"
+    }
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
