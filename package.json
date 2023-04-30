@@ -40,8 +40,8 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "@aws-cdk/integ-runner": "^2.55.1",
-    "@aws-cdk/integ-tests-alpha": "^2.55.1-alpha.0",
+    "@aws-cdk/integ-runner": "^2.77.0",
+    "@aws-cdk/integ-tests-alpha": "^2.77.0-alpha.0",
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
     "@semantic-release/exec": "^6.0.3",
