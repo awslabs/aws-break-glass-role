@@ -1,0 +1,35 @@
+name: Test Artifacts
+
+on:
+  push:
+    branches:  
+      - "feat/**" 
+      - "feature/**"
+      - "fix/**"
+      - "bugfix/**"
+
+concurrency:
+  group: ${{ github.ref }}
+  
+jobs:
+  release:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    - name: Test and Build Package
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/*
+    - name: build
+      run: |
+        npm install
+        npm run build
+        npm test
+      env:
+          CDK_DEFAULT_ACCOUNT: ${{ secrets.CDK_DEFAULT_ACCOUNT }}
+          CDK_DEFAULT_REGION: ${{ secrets.CDK_DEFAULT_REGION }}
