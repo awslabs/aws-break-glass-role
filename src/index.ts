@@ -1,12 +1,16 @@
 export { BreakGlassRole } from './constructs/role';
-export { BreakGlassLoginAlert, BreakGlassLoginAlertProps } from './constructs/login-alert';
-export { BreakGlassLogActions, BreakGlassLogActionsProps } from './constructs/log-actions';
-export { BreakGlassDeployer, BreakGlassDeployerProps } from './constructs/deploy';
+export { BreakGlassLoginAlert } from './constructs/login-alert';
+export { BreakGlassLogActions } from './constructs/log-actions';
+export { BreakGlassDeployer } from './constructs/deploy';
 export { BreakGlassTargetInput } from './input/target-input';
 export { SigninTargetInput } from './input/signin';
-export { BreakGlassLogGroup, BreakGlassLogProps } from './util/log-group';
+export { BreakGlassLogGroup } from './util/log-group';
 export {
     BreakGlassRoleProps,
+    BreakGlassLogProps,
+    BreakGlassLogActionsProps,
+    BreakGlassLoginAlertProps,
+    BreakGlassDeployerProps,
     EventBusOptions,
     NumericMatchOperator,
     EventPatternFieldFilter,
