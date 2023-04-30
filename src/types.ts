@@ -1,7 +1,7 @@
-import { RemovalPolicy, ResourceProps } from "aws-cdk-lib"
-import { EventBus } from "aws-cdk-lib/aws-events"
+import { ResourceProps } from "aws-cdk-lib"
+import { EventBus, RuleTargetInput } from "aws-cdk-lib/aws-events"
 import { IManagedPolicy, IRole, IUser, PolicyStatement } from "aws-cdk-lib/aws-iam"
-import { RetentionDays } from "aws-cdk-lib/aws-logs"
+import { LogGroupProps, RetentionDays } from "aws-cdk-lib/aws-logs"
 
 export interface BreakGlassBaseProps extends ResourceProps {
   usernames:(IUser | string)[]
@@ -56,3 +56,53 @@ export interface EventPatternFields {
   [name: string]: EventPatternField
 }
 
+export interface LogActionsRuleProps extends BreakGlassRuleBaseProps {
+  logActions?: 'read' | 'write' | boolean
+  logServices?: string[]
+}
+
+export interface BreakGlassRuleBaseProps extends ResourceProps{
+  usernames: (IRole | IUser | string)[]
+  eventBus:EventBus
+  busRole:IRole
+  mainRegion: string
+  targetInput?: RuleTargetInput
+  role?:IRole
+  region?: string
+  retentionDays?: RetentionDays
+}
+
+export interface BreakGlassDeployerProps {
+  breakGlassRole?: IRole
+  assumedBy?: string | IUser | IRole
+  exists?: 'user' | 'role'
+}
+
+export interface BreakGlassLogProps extends ResourceProps, LogGroupProps {
+  region?: string
+}
+
+export interface BreakGlassLogActionsProps extends BreakGlassBaseProps {
+  logActions?: 'read' | 'write' | boolean
+  logServices?: string[]
+}
+
+export interface BreakGlassLoginAlertProps extends BreakGlassBaseProps {
+  loginAlertEmails?: string[]
+  createLoginLogGroup?: boolean
+  message?:string
+}
+
+export interface LoginAlertRuleProps extends BreakGlassRuleBaseProps {
+  loginAlertEmails?: string[]
+  sendLogs?:boolean
+}
+
+export interface EventInput {
+  [name:string]: string
+}
+
+export interface TargetInput {
+  event: EventInput
+  message?: string
+}

@@ -1,20 +1,9 @@
-import { Resource, ResourceProps, Stack } from "aws-cdk-lib";
+import { Resource, Stack } from "aws-cdk-lib";
 import { EventBus, EventPattern, IRuleTarget, Rule, RuleTargetInput } from "aws-cdk-lib/aws-events";
 import { EventBus as TargetBus } from 'aws-cdk-lib/aws-events-targets';
 import { IRole, IUser } from "aws-cdk-lib/aws-iam";
-import { RetentionDays } from "aws-cdk-lib/aws-logs";
 import { Construct } from "constructs";
-
-export interface BreakGlassRuleBaseProps extends ResourceProps{
-    usernames: (IRole | IUser | string)[]
-    eventBus:EventBus
-    busRole:IRole
-    mainRegion: string
-    targetInput?: RuleTargetInput
-    role?:IRole
-    region?: string
-    retentionDays?: RetentionDays
-}
+import { BreakGlassRuleBaseProps } from "../types";
 
 export abstract class BreakGlassRuleBase extends Resource {
     rule: Rule;

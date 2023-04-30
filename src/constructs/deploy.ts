@@ -10,12 +10,7 @@ import {
     Role, 
     User 
 } from "aws-cdk-lib/aws-iam";
-
-export interface BreakGlassDeployerProps {
-    breakGlassRole?: IRole
-    assumedBy?: string | IUser | IRole
-    exists?: 'user' | 'role'
-}
+import { BreakGlassDeployerProps } from "../types";
 
 export class BreakGlassDeployer extends Resource {
     assumedBy: IUser | IRole

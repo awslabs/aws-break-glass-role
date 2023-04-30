@@ -1,13 +1,8 @@
 import { EventPattern, IRuleTarget, RuleTargetInput } from "aws-cdk-lib/aws-events";
 import { BreakGlassLogGroup } from "../../util/log-group";
 import { Construct } from "constructs";
-import { EventPatternField } from "../../types";
-import { BreakGlassRuleBase, BreakGlassRuleBaseProps } from "../../util/rule-base";
-
-export interface LogActionsRuleProps extends BreakGlassRuleBaseProps {
-    logActions?: 'read' | 'write' | boolean
-    logServices?: string[]
-}
+import { EventPatternField, LogActionsRuleProps } from "../../types";
+import { BreakGlassRuleBase } from "../../util/rule-base";
 
 export class LogActionsRule extends BreakGlassRuleBase {
     readOnly: {readOnly?: EventPatternField} = {}

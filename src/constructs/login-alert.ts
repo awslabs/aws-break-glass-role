@@ -1,14 +1,10 @@
 import { BreakGlassConstructBase } from "../util/construct-base";
-import { BreakGlassBaseProps } from "../types";
+import { BreakGlassLoginAlertProps } from "../types";
 import { LoginAlertRule } from "../events/rules/login-alert";
 import { RetentionDays } from "aws-cdk-lib/aws-logs";
 import { SigninTargetInput } from "../input/signin";
 import { Construct } from "constructs";
-export interface BreakGlassLoginAlertProps extends BreakGlassBaseProps {
-    loginAlertEmails?: string[]
-    createLoginLogGroup?: boolean
-    message?:string
-}
+
 
 export class BreakGlassLoginAlert extends BreakGlassConstructBase {
     constructor(scope:Construct,id:string,props:BreakGlassLoginAlertProps) {

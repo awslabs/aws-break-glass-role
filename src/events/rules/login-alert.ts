@@ -3,12 +3,8 @@ import { SnsTopic } from "aws-cdk-lib/aws-events-targets";
 import { Subscription, SubscriptionProtocol, Topic } from "aws-cdk-lib/aws-sns";
 import { Construct } from "constructs";
 import { BreakGlassLogGroup } from "../../util/log-group";
-import { BreakGlassRuleBase, BreakGlassRuleBaseProps } from "../../util/rule-base";
-
-export interface LoginAlertRuleProps extends BreakGlassRuleBaseProps {
-    loginAlertEmails?: string[]
-    sendLogs?:boolean
-}
+import { BreakGlassRuleBase } from "../../util/rule-base";
+import { LoginAlertRuleProps } from "../../types";
 
 export class LoginAlertRule extends BreakGlassRuleBase {
 

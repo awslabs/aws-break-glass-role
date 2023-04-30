@@ -1,13 +1,11 @@
 import { Construct } from "constructs";
 import { CloudWatchLogGroup } from "aws-cdk-lib/aws-events-targets";
-import { LogGroup, LogGroupProps } from "aws-cdk-lib/aws-logs";
-import { Resource, ResourceProps, Stack } from "aws-cdk-lib";
+import { LogGroup } from "aws-cdk-lib/aws-logs";
+import { Resource, Stack } from "aws-cdk-lib";
 import { randomBytes } from "crypto";
 import { IRule, IRuleTarget, RuleTargetConfig } from "aws-cdk-lib/aws-events";
+import { BreakGlassLogProps } from "../types";
 
-export interface BreakGlassLogProps extends ResourceProps, LogGroupProps {
-    region?: string
-}
 
 export class BreakGlassLogGroup extends Resource implements IRuleTarget {
     ruleTarget: CloudWatchLogGroup;

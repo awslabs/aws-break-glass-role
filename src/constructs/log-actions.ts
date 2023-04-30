@@ -1,12 +1,8 @@
 import { BreakGlassConstructBase } from "../util/construct-base";
-import { BreakGlassBaseProps } from "../types";
+import { BreakGlassBaseProps, BreakGlassLogActionsProps } from "../types";
 import { LogActionsRule } from "../events/rules/log-actions";
 import { Construct } from "constructs";
 
-export interface BreakGlassLogActionsProps extends BreakGlassBaseProps {
-    logActions?: 'read' | 'write' | boolean
-    logServices?: string[]
-}
 
 export class BreakGlassLogActions extends BreakGlassConstructBase {
 

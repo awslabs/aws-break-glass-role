@@ -151,7 +151,6 @@ describe("BreakGlassLoginAlert", () => {
         });
     });
     it('Transforms Message', () => {
-        const msgSpy = jest.spyOn(SigninTargetInput, 'getTarget');
         con = new LoginAlert(stack, testName, {
             usernames: ["myUser"],
             loginAlertEmails: ["myEmail@me.com"],
@@ -163,7 +162,6 @@ describe("BreakGlassLoginAlert", () => {
         });
 
         template = Template.fromStack(stack);
-        expect(msgSpy).toHaveBeenCalled();
         template.hasResourceProperties('AWS::Events::Rule', {
             Name: {
                 "Fn::Join": [

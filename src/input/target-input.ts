@@ -1,13 +1,5 @@
 import { EventField, RuleTargetInput } from "aws-cdk-lib/aws-events"
-
-export interface EventInput {
-    [name:string]: string
-}
-
-export interface TargetInput {
-    event: EventInput
-    message?: string
-}
+import { EventInput, TargetInput } from "../types";
 
 export class BreakGlassTargetInput {
     readonly event: EventInput
