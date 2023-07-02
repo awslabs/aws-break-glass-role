@@ -1,7 +1,7 @@
 # AWS Break Glass Role
 
 ![Version](https://img.shields.io/npm/v/aws-break-glass-role?style=plastic)
-![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/aws-break-glass-role)
+![GitHub Repo stars](https://img.shields.io/github/stars/awslabs/aws-break-glass-role?style=plastic)
 ![Build](https://img.shields.io/github/actions/workflow/status/awslabs/aws-break-glass-role/release.yml?style=plastic)
 ![License](https://img.shields.io/github/license/awslabs/aws-break-glass-role?style=plastic)
 ![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=plastic)
