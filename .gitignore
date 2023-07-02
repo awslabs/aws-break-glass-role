@@ -22,3 +22,4 @@ repolinter/
 gitlab-ci.yaml
 jsii
 package-lock.json
+integ.*.js.snapshot
