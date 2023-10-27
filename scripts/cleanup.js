@@ -1,10 +1,12 @@
-const { CloudWatchLogs } = require('aws-sdk');
+const { CloudWatchLogs } = require("@aws-sdk/client-cloudwatch-logs");
 module.exports = (...regions) => {
     regions.forEach(region => {
         const logs = new CloudWatchLogs({
             region,
-            accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-            secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+            credentials: {
+                accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+                secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
+            },
         });
         logs.describeLogGroups({}, (err, data) => {
             if (err) console.error(err);
