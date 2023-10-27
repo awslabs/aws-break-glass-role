@@ -40,6 +40,7 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
+    "@aws-sdk/client-cloudwatch-logs": "^3.347.0",
     "@aws-cdk/integ-runner": "^2.77.0-alpha.0",
     "@aws-cdk/integ-tests-alpha": "^2.77.0-alpha.0",
     "@ryansonshine/commitizen": "^4.2.8",
@@ -47,7 +48,6 @@
     "@semantic-release/exec": "^6.0.3",
     "@types/jest": "^29.2.4",
     "@types/node": "^18.11.15",
-    "aws-sdk": "^2.1282.0",
     "constructs": "^10.0.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "husky": "^6.0.0",
@@ -58,11 +58,6 @@
   },
   "dependencies": {
     "aws-cdk-lib": "^2.77.0"
-  },
-  "overrides": {
-    "aws-sdk": {
-      "xml2js": "^0.4.23"
-    }
   },
   "config": {
     "commitizen": {
